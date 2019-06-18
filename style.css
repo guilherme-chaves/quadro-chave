@@ -3,16 +3,14 @@
   position: sticky;
   top: 10px;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #333;
   padding: 10px;
   ///não sei como fazer os nomes ficar proximos da logo///
 }
-
 li {
   float: left;
+  justify-content: center;
 }
 
 li a, .dropbtn {
@@ -52,4 +50,14 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.barra {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  width: 270px;
+  height: 100vh;
+  margin-left: 10px;
+
 }
