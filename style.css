@@ -1,15 +1,26 @@
-
 .menu {
+  width: 80%;
+  height: 85px;
   font-size: 20px;
   position: sticky;
   top: 10px;
   padding: 10px 15px;
   list-style-type: none;
-  overflow: hidden;
   background-color: #333;
   vertical-align: middle;
-  ///fazer os nomes ficar proximos da logo/// deixar tudo alinhado///
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+
+  /*///fazer os nomes ficar proximos da logo/// deixar tudo alinhado///*/
 }
+
+#itens-lista {
+  display: flex;
+  justify-content: flex-start;
+}
+
 li {
   float: left;
   display: inline-block;
@@ -22,6 +33,7 @@ li a, .dropbtn {
   text-align: center;
   padding: 14px;
   padding-left: 10px;
+  margin-left: 3vw;
   text-decoration: none;
 }
 
