@@ -110,14 +110,7 @@ li.dropdown {
   display: block;
 <<<<<<< HEAD
 }
-
-main {
-  position: relative;
-  left: 10%;
-  width: 80%;
-  height: 2000px;
-  margin-top: 20px;
-}
+*/
 
 .barra {
   position: absolute;
@@ -146,15 +139,23 @@ main {
   width:100%;
 }
 
+
+.imgcard{
+  width:273px;
+  height:180px;
+}
+
 /*cartões flips*/
 .card-container{
+   margin-top: 4vh;
+   margin-left: 1.2vh;
   display: flex;
   flex-wrap: wrap;
   margin-left: 1vw;
 }
 .flip-card {
-  width: 250px;
-  height: 150px;
+  width: 273px;
+  height: 180px;
   perspective: 800px;
 
 
@@ -183,6 +184,7 @@ main {
 .flip-card-front {
   background-color: #bbb;
   color: black;
+
 }
 
 .flip-card-back {
@@ -190,8 +192,6 @@ main {
   color: white;
   transform: rotateY(180deg);
 }
-=======
-  }*/
 
   main {
     position: relative;
@@ -229,7 +229,7 @@ main {
   .imgcarro{
     width:100%;
   }
-
+ /*
   .card-container {
     margin-top: 4vh;
     width: 100%;
@@ -240,7 +240,7 @@ main {
     align-items: center;
   }
 
-  /*cartões flips*/
+ cartões flips
   .flip-card {
     width: 300px;
     height: 200px;
