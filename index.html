@@ -48,7 +48,7 @@
 		<main>
 
 			<!-- div corpo pricipal/ coluna da esquerda--->
-			<div style="position: absolute; left: 0; background-color: #7cbbef; width: 79%;">
+			<div style="position: absolute; left: 0; background-color: #7cbbef; width: 79%; flex-direction: row; flex-wrap: wrap;">
 
 				<!--- carrosel/slides--->
 				<div class="container" style="max-width: 100%;">
@@ -63,15 +63,15 @@
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner">
 							<div class="item active">
-								<img src="1.jpg" alt="1" style="width:100%;">
+								<img src="1.jpg" alt="1" class="imgcarro">
 							</div>
 
 							<div class="item">
-								<img src="2.jpg" alt="3" style="width:100%;">
+								<img src="2.jpg" alt="3" class="imgcarro">
 							</div>
 
 							<div class="item">
-								<img src="3.jpg" alt="3" style="width:100%;">
+								<img src="3.jpg" alt="3" class="imgcarro">
 							</div>
 						</div>
 
@@ -87,6 +87,36 @@
 					</div>
 				</div>
 				<!-- Fim do carrosel -->
+
+
+				<!---- cards que giram---->
+				<div class="flip-card" >
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      <img src="anim.jpeg" alt="Avatar" style=" width:300px;height:200px; padding: 15px">
+				    </div>
+				    <div class="flip-card-back">
+				      <h1>Avatar,<br> a Lenda de Aang</h1> 
+				      <p>animação blabla</p> 
+				      <p>adoramos</p>
+				    </div>
+				  </div>
+				</div>
+				<div class="card-container">
+				</div>
+			</div>
+			<div class="flip-card">
+				  <div class="flip-card-inner">
+				    <div class="flip-card-front">
+				      <img src="anim.jpeg" alt="Avatar" style=" width:300px;height:200px; padding: 15px">
+				    </div>
+				    <div class="flip-card-back">
+				      <h1>Avatar,<br> a Lenda de Aang</h1> 
+				      <p>animação blabla</p> 
+				      <p>adoramos</p>
+				    </div>
+				  </div>
+				</div>
 				<div class="card-container">
 					<ul id="lista-filmes"></ul>
 				</div>
