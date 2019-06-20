@@ -16,14 +16,55 @@
 #itens-lista {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
+
+.dropbtn {
+  line-height: 60px;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-weight: normal;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropbtn:hover { background-color: #7cbbef; }
 
 li {
   display: inline-block;
-  line-height: 48px;
   font-weight: bold;
 }
 
+li a, .dropbtn {
+  text-decoration: none;
+  line-height: 60px;
+  color: #ffb223;
+}
+
+/*
 li a, .dropbtn {
   display: inline-block;
   color: #ffb223;
@@ -39,7 +80,6 @@ li a:hover, .dropdown:hover .dropbtn {
 
 li.dropdown {
   display: inline-block;
-
 }
 
 .dropdown-content {
@@ -68,6 +108,7 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+<<<<<<< HEAD
 }
 
 main {
@@ -149,3 +190,93 @@ main {
   color: white;
   transform: rotateY(180deg);
 }
+=======
+  }*/
+
+  main {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 2000px;
+    margin-top: 20px;
+  }
+
+  .barra {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #7cbbef;
+    width: 20%;
+    height: 95%;
+  }
+
+  .top {
+    width:90%;
+    font-size: 20px;
+    background: #292b3f;
+    color: #fff;
+    margin: 20px 0 20px;
+  }
+
+  .top > * {
+    margin: 0;
+  }
+
+
+  .imgcarro{
+    width:100%;
+  }
+
+  .card-container {
+    margin-top: 4vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*cartões flips*/
+  .flip-card {
+    width: 300px;
+    height: 200px;
+    perspective: 900px;
+    flex-direction: row;
+    margin: 0 16px 0 16px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #292b3f;
+    color: white;
+    transform: rotateY(180deg);
+  }
+>>>>>>> master

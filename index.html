@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Quadro chave</title>
@@ -19,23 +20,45 @@
 		</div>
 		<div id="itens-lista" style="flex-grow: 8">
 			<li>
-				<a href="#home">Home</a>
+				<a class="dropbtn" href="#home">Home</a>
 			</li>
-			<li class="dropdown">
+			<li>
+				<div class="dropdown">
+					<a class="dropbtn">Gêneros 
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<div class="dropdown-content">
+						<a href="#">ação</a>
+						<a href="#">aventura</a>
+						<a href="#">romance</a>
+					</div>
+				</div>
+				<!--
 				<a href="javascript:void(0)" class="dropbtn">Gêneros</a>
 				<div class="dropdown-content">
 					<a href="#">ação</a>
 					<a href="#">aventura</a>
 					<a href="#">romance</a>
-				</div>
+				</div>-->
 			</li>
-			<li class="dropdown">
+			<li>
+				<div class="dropdown">
+					<a class="dropbtn">Anos 
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<div class="dropdown-content">
+						<a href="#">2018</a>
+						<a href="#">2016</a>
+						<a href="#">2001</a>
+					</div>
+				</div>
+				<!--
 				<a href="javascript:void(0)" class="dropbtn">Anos</a>
 				<div class="dropdown-content">
 					<a href="#">2018</a>
 					<a href="#">2016</a>
 					<a href="#">2001</a>
-				</div>
+				</div>-->
 			</li>
 		</div>
 		<div style="flex-grow: 2; position: absolute; right: 16px;">
