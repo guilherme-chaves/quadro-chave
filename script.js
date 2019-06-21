@@ -28,7 +28,7 @@ function geraCard(filme) {
   front.className = "flip-card-front"
   var img = document.createElement("img");
   img.className = "imgcard";
-  img.setAttribute("src", "anim.jpeg");
+  img.setAttribute("src", filme["screenshots"][0]);
 
   // Parte de trás do card
   var back = document.createElement("div");
@@ -39,7 +39,7 @@ function geraCard(filme) {
   h3.appendChild(titulo);
   // Avaliação
   var avaliacao = document.createElement("p");
-  var sinopse = document.createTextNode(filme["sinopse"]);
+  var sinopse = document.createTextNode("Nota: "+filme["nota"]+"/10");
   avaliacao.appendChild(sinopse);
   // Gêneros
   var genero = document.createElement("p");
@@ -63,6 +63,17 @@ function geraCard(filme) {
 
 function listaItens() {
   sessionStorage.clear();
+  var filmes = {};
+  var container = document.getElementById("card-cont");
+  container.innerHTML = "";
+  loadData.then(function(json) {
+    filmes = json;
+  })
+  .then(function() {
+    for (filme in filmes) {
+      container.appendChild(geraCard(filmes[filme]));
+    }
+  })
 }
 
 function pesquisar(value, event) {
@@ -204,7 +215,7 @@ function loadAnima(){
     document.getElementById("duracao-filme").innerHTML = animacao["duracao"];
     document.getElementById("ano-filme").innerHTML = animacao["ano"];
     document.getElementById("pais-filme").innerHTML = animacao["pais"];
-    document.getElementById("diretor-filme").innerHTML = animacao["direcao"];
+    document.getElementById("diretor-filme").innerHTML = animacao["Direção"];
     document.getElementById("sinopse-filme").innerHTML = animacao["sinopse"];
     document.getElementById("trailer-filme").src = animacao["url_video"];
 

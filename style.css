@@ -102,6 +102,8 @@ li a, .dropbtn {
  margin-top: 4vh;
  margin-left: 1.2vh;
  display: flex;
+ align-items: center;
+ justify-content: center;
  flex-wrap: wrap;
  margin-left: 1vw;
 }
@@ -112,9 +114,13 @@ li a, .dropbtn {
   width: 265px;
   height: 170px;
   perspective: 800px;
-
-
+  margin: 0 8px 16px 8px;
 }
+
+.flip-card:hover {
+  cursor: pointer;
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -143,16 +149,16 @@ li a, .dropbtn {
 }
 
 .flip-card-back {
-  background-color: #292b3f;
-  color: white;
+  background-color: #e5e5e5;
+  color: #292b3f;
   transform: rotateY(180deg);
 }
 
 main {
-  position: relative;
+  position: absolute;
   left: 10%;
   width: 80%;
-  height: 2000px;
+  height: 100%;
   margin-top: 20px;
 }
 
@@ -185,6 +191,7 @@ td{
   background-color: #292b3f;
   color: white;
   width: 79%;
+  display: flex;
   flex-direction: column;
 
   padding: 16px;
@@ -196,6 +203,7 @@ td{
 
 hr {
   color: white;
+  margin: 20px 0 20px 0;
 }
 
 iframe {
