@@ -1,7 +1,7 @@
 {
   "0": {
     "nome": "Toy Story 3",
-    "generos": ["Aventura", "Premiado", "Comédia", "Infantil"],
+    "generos": ["Aventura e Ação", "Premiado", "Comédia", "Infantil"],
     "nota": 9.5,
     "duracao": "1h 42min",
     "ano": "2010",
@@ -17,7 +17,7 @@
   },
   "1": {
     "nome": "Rei Leão",
-    "generos": ["Aventura", "Premiado", "Drama", "Premiados", "Infantil"],
+    "generos": ["Aventura e Ação", "Premiado", "Drama", "Premiados", "Infantil"],
     "nota": 9,
     "duracao": "1h 29min",
     "ano": "1994",
@@ -33,7 +33,7 @@
   },
   "2": {
     "nome": " A Viagem de Chihiro",
-    "generos": ["Aventura", "Premiado","Anime","Drama", "Infantil"],
+    "generos": ["Aventura e Ação", "Premiado","Anime","Drama", "Infantil"],
     "nota": 8.5,
     "duracao": "2h 5min",
     "ano": "2001",
@@ -65,7 +65,7 @@
   },
   "4": {
     "nome": "Viva: A Vida É Uma Festa",
-    "generos": ["Aventura", "Premiado", "Comédia", "Infantil"],
+    "generos": ["Aventura e Ação", "Premiado", "Comédia", "Infantil"],
     "nota": 9,
     "duracao": "1h 49min",
     "ano": "2017",
@@ -97,7 +97,7 @@
   },
   "6": {
     "nome": "Frozen",
-    "generos": ["Aventura", "Premiado", "Romance", "Infantil"],
+    "generos": ["Aventura e Ação", "Premiado", "Romance", "Infantil"],
     "nota": 9,
     "duracao": "1h 49min",
     "ano": "2013",
@@ -113,7 +113,7 @@
   },
   "7": {
     "nome": "Minions",
-    "generos": ["Aventura", "Comédia", "Infantil"],
+    "generos": ["Aventura e Ação", "Comédia", "Infantil"],
     "nota": 8,
     "duracao": "1h 31min",
     "ano": "2015",
@@ -129,7 +129,7 @@
   },
   "8": {
     "nome": "Os Incríveis 2",
-    "generos": ["Aventura/ Ação", "Comédia", "Infantil"],
+    "generos": ["Aventura e Ação", "Comédia", "Infantil"],
     "nota": 10,
     "duracao": "2h 5min",
     "ano": "2018",
