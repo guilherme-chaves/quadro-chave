@@ -10,8 +10,8 @@
   z-index: 5;
   display: flex;
   align-items: center;
-
 }
+
 #itens-lista {
   display: flex;
   justify-content: flex-start;
@@ -63,54 +63,6 @@ li a, .dropbtn {
   color: #ffb223;
 }
 
-/*
-li a, .dropbtn {
-  display: inline-block;
-  color: #ffb223;
-  text-align: center;
-  padding: 14px;
-  margin-left: 1vw;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #7cbbef;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  font-weight: normal;
-  position: fixed;
-  top: 76px;
-  background-color: #f9f9f9;
-  min-width: 60px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  margin: 0;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #e0e0e0;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-<<<<<<< HEAD
-}
-*/
-
 .barra {
   position: absolute;
   right: 0;
@@ -146,12 +98,13 @@ li.dropdown {
 
 /*cartões flips*/
 .card-container{
-   margin-top: 4vh;
-   margin-left: 1.2vh;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 1vw;
+ margin-top: 4vh;
+ margin-left: 1.2vh;
+ display: flex;
+ flex-wrap: wrap;
+ margin-left: 1vw;
 }
+
 .flip-card {
   width: 273px;
   height: 180px;
@@ -192,100 +145,69 @@ li.dropdown {
   transform: rotateY(180deg);
 }
 
-  main {
-    position: relative;
-    left: 10%;
-    width: 80%;
-    height: 2000px;
-    margin-top: 20px;
-  }
+main {
+  position: relative;
+  left: 10%;
+  width: 80%;
+  height: 2000px;
+  margin-top: 20px;
+}
 
-  .barra {
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    background-color: #7cbbef;
-    width: 20%;
-    height: 95%;
-  }
+.barra {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background-color: #7cbbef;
+  width: 20%;
+  height: 95%;
+}
 
-  td a{
-    color: white;
-  }
-  th{
-    color: #ffb223;
-    text-align: center;
-  }
-  td{
-    font-size: 1vw;
-  }
-  .top {
-    width:90%;
-    font-size: 20px;
-    background: #292b3f;
-    color: #fff;
-    margin: 20px 0 20px;
-  }
+td a{
+  color: white;
+}
+th{
+  color: #ffb223;
+  text-align: center;
+}
+td{
+  font-size: 1vw;
+}
 
-  .top > * {
-    margin: 0;
-  }
+.container-informacao {
+  position: absolute;
+  left: 0;
+  background-color: #292b3f;
+  color: white;
+  width: 79%;
+  flex-direction: column;
 
+  padding: 16px;
+}
 
-  .imgcarro{
-    width:100%;
-  }
- /*
-  .card-container {
-    margin-top: 4vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  }
+.notas {
+  text-align: right;
+}
 
- cartões flips
-  .flip-card {
-    width: 300px;
-    height: 200px;
-    perspective: 900px;
-    flex-direction: row;
-    margin: 0 16px 0 16px;
-  }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
+hr {
+  color: white;
+}
 
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
+iframe {
+  width: 100%;
+  height: 520px;
+}
 
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
+.screenshots {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
 
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-
-  .flip-card-back {
-    background-color: #292b3f;
-    color: white;
-    transform: rotateY(180deg);
-  }
->>>>>>> master
+.screenshots > img {
+  padding: 8px;
+  max-width: 30%;
+}
