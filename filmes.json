@@ -8,6 +8,10 @@
     "pais": "Estados Unidos",
     "direcao": "Fulano",
     "cast": ["Pessoa 1", "Pessoa 2"],
-    "sinopse": "Isso é para ser uma sinopse"
+    "sinopse": "Isso é para ser uma sinopse",
+    "review": "Filme muito bom",
+    "poster": "imagens/nomedaimagem.jpg",
+    "screenshots": ["imagens/nomedoscreenshot.jpg", "imagens/nomedoscreenshot2.jpg", "imagens/nomedoscreenshot3.jpg"],
+    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg",
   }
 }
