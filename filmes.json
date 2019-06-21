@@ -70,45 +70,76 @@
     "url_video": "https://www.youtube.com/watch?v=iLmZZV-Nkuk"
   },
   "5": {
-    "nome": "Viva: A Vida É Uma Festa",
-    "generos": ["Aventura", "Premiado", "Comédia", "infantil"],
+    "nome": "Divertida Mente",
+    "generos": ["Comedia", "infantil", "Aventura e Ação"],
     "nota": 9,
-    "duracao": "1h 49min",
-    "ano": "2017",
+    "duracao": "1h 42min",
+    "ano": "2015",
     "pais": "Estados Unidos",
-    "Direção": "Lee Unkrich, Adrian Molina",
-    "sinopse": "",
-    "review": "",
-    "poster": "imagens/toy3post.jpg",
-    "screenshots": ["imagens/toy31.jpg", "imagens/toy32.png", "imagens/toy33.jpg"],
-    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg"
+    "Direção": "Peter Docter",
+    "sinopse": "Riley é uma garota divertida de 11 anos de idade, que deve enfrentar mudanças importantes em sua vida quando seus pais decidem deixar a sua cidade natal, no estado de Minnesota, para viver em San Francisco. Dentro do cérebro de Riley, convivem várias emoções diferentes, como a Alegria, o Medo, a Raiva, o Nojinho e a Tristeza. A líder deles é Alegria, que se esforça bastante para fazer com que a vida de Riley seja sempre feliz. Entretanto, uma confusão na sala de controle faz com que ela e Tristeza sejam expelidas para fora do local. Agora, elas precisam percorrer as várias ilhas existentes nos pensamentos de Riley para que possam retornar à sala de controle - e, enquanto isto não acontece, a vida da garota muda radicalmente.",
+    "review": "Esse é o longa mais complexo produzido pela Pixar. Isso porque, por baixo de toda fofura, cores e tecnologia, o cineasta Pete Docter e sua equipe conseguem traduzir toda essa intrincada estrutura em um longa que flui bem e de maneira divertida e fascinante - Cinema com Rapadura",
+    "poster": "imagens/divertidapost.jpg",
+    "screenshots": ["imagens/divertida1.jpg", "imagens/divertida2.png", "imagens/divertida3.jpg"],
+    "url_video": "https://www.youtube.com/watch?v=LSpeM7G4zfY"
   },
   "6": {
-    "nome": "Viva: A Vida É Uma Festa",
-    "generos": ["Aventura", "Premiado", "Comédia", "infantil"],
+    "nome": "Frozen",
+    "generos": ["Aventura", "Premiado", "Romance", "infantil"],
     "nota": 9,
     "duracao": "1h 49min",
-    "ano": "2017",
+    "ano": "2013",
     "pais": "Estados Unidos",
-    "Direção": "Lee Unkrich, Adrian Molina",
-    "sinopse": "",
-    "review": "",
-    "poster": "imagens/toy3post.jpg",
-    "screenshots": ["imagens/toy31.jpg", "imagens/toy32.png", "imagens/toy33.jpg"],
-    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg"
+    "Direção": "Jennifer Lee, Chris Buck",
+    "sinopse": "A caçula Anna (Kristen Bell/Gabi Porto) adora sua irmã Elsa (Idina Menzel/Taryn Szpilman), mas um acidente envolvendo os poderes especiais da mais velha, durante a infância, fez com que os pais as mantivessem afastadas. Após a morte deles, as duas cresceram isoladas no castelo da família, até o dia em que Elsa deveria assumir o reinado de Arendell. Com o reencontro das duas, um novo acidente acontece e ela decide partir para sempre e se isolar do mundo, deixando todos para trás e provocando o congelamento do reino. É quando Anna decide se aventurar pelas montanhas de gelo para encontrar a irmã e acabar com o frio.",
+    "review": "Alegoricamente, 'Frozen' carece da pureza e do poder elementar de um clássico como 'A Bela e a Fera', mas pelo menos sua narrativa é bastante coerente e seu mundo etéreo de neve e gelo forma um dos ambientes visuais mais cativantes dentre os encontrados nas animações da Disney. - New York Times",
+    "poster": "imagens/frozenpost.jpg",
+    "screenshots": ["imagens/frozen1.jpg", "imagens/frozen2.png", "imagens/frozen3.png"],
+    "url_video": "https://www.youtube.com/watch?v=uKTz8y0pzL8"
   },
   "7": {
-    "nome": "Viva: A Vida É Uma Festa",
-    "generos": ["Aventura", "Premiado", "Comédia", "infantil"],
-    "nota": 9,
-    "duracao": "1h 49min",
+    "nome": "Minions",
+    "generos": ["Aventura", "Comédia", "infantil"],
+    "nota": 8,
+    "duracao": "1h 31min",
+    "ano": "2015",
+    "pais": "Estados Unidos",
+    "Direção": "Pierre Coffin, Kyle Balda",
+    "sinopse": "Seres amarelos milenares, os minions têm uma missão: servir os maiores vilões. Em depressão desde a morte de seu antigo mestre, eles tentam encontrar um novo chefe. Três voluntários, Kevin, Stuart e Bob, vão até uma convenção de vilões nos Estados Unidos e lá se encantam com Scarlet Overkill (Sandra Bullock), que ambiciona ser a primeira mulher a dominar o mundo.",
+    "review": "Uma animação tecnicamente muito boa, que utiliza elementos para fazer o público gastar (desnecessariamente) uns níqueis a mais nas salas 3D, mas que tem uma trama muito fina, que vai se desgastando ao longo de seus 91 minutos e por pouco não rasga. - Omelete",
+    "poster": "imagens/minionspost.jpg",
+    "screenshots": ["imagens/minions1.png", "imagens/minions2.jpg", "imagens/minions3.jpg"],
+    "url_video": "https://www.youtube.com/watch?v=ly-GueGW3_s"
+  }
+}
+  "8": {
+    "nome": "Os Incríveis 2",
+    "generos": ["Aventura/ Ação", "Comédia", "infantil"],
+    "nota": 10,
+    "duracao": "2h 5min",
+    "ano": "2018",
+    "pais": "Estados Unidos",
+    "Direção": "Brand Bird",
+    "sinopse": "Quando Helena Pêra é chamada para voltar a lutar contra o crime como a super-heroína Mulher-Elástica, cabe ao seu marido, Roberto, a tarefa de cuidar das crianças, especialmente o bebê Zezé. O que ele não esperava era que o caçula da família também tivesse superpoderes, que surgem sem qualquer controle.",
+    "review": "Impulsionado por personagens centrais que permanecem muito atraentes e com um roteiro profundamente inteligente, 'Os Incríveis 2' certamente prova que vale a pena esperar, mesmo que acerte o alvo, mas não exatamente da mesma maneira que o primeiro. - The Hollywood Reporter",
+    "poster": "imagens/incriveispost.jpg",
+    "screenshots": ["imagens/incriveis1.jpg", "imagens/incriveis2.jpg", "imagens/incriveis3.jpg"],
+    "url_video": "https://www.youtube.com/watch?v=zOZR0TRnSU8"
+  }
+}
+}
+  "9": {
+    "nome": "Meu Malvado Favorito 3",
+    "generos": ["Comédia", "infantil"],
+    "nota": 8,
+    "duracao": "1h 36min",
     "ano": "2017",
     "pais": "Estados Unidos",
-    "Direção": "Lee Unkrich, Adrian Molina",
-    "sinopse": "",
-    "review": "",
-    "poster": "imagens/toy3post.jpg",
-    "screenshots": ["imagens/toy31.jpg", "imagens/toy32.png", "imagens/toy33.jpg"],
-    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg"
+    "Direção": "Pierre Coffin, Kyle Balda",
+    "sinopse": "Nos anos 1980, Balthazar Bratt fazia muito sucesso através de sua série de TV, onde interpretava um vilão chamado EvilBratt. Entretanto, o tempo passou, ele cresceu, a voz mudou e a fama se foi. Com a série cancelada, Balthazar tornou-se uma pessoa vingativa que, nas décadas seguintes, planejou seu retorno triunfal como vingança. Gru e Lucy são chamados para enfrentá-lo logo em sua reaparição, mas acabam sendo demitidos por não terem conseguido capturá-lo. Gru então descobre que possui um irmão gêmeo, Dru, e parte com a família para encontrá-lo no país em que vive.",
+    "review": "''Meu Malvado Favorito 3' é um longa que agradará as crianças em cheio pelo seu característico e frequente – nos dias de hoje – ritmo frenético. Contudo, um roteiro bem escrito e um desenvolvimento de personagens eficiente [...] faria muito bem a nós adultos... '' - Café com Rapadura",
+    "poster": "imagens/mauvpost.jpg",
+    "screenshots": ["imagens/mauv1.jpg", "imagens/mauv2.jpg", "imagens/mauv3.jpg"],
+    "url_video": "https://www.youtube.com/watch?v=9XEHAP9UGfY"
   }
 }
