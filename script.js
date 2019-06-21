@@ -12,8 +12,6 @@ var loadData = new Promise(function (resolve, reject) {
 });
 
 function geraCard(filme) {
-  var generos = filme["generos"].toString();
-  generos = generos.replace(/,/g, ", ");
   var onclick = "goToAnima('" + filme["nome"] + "', event)";
 
   // Criação do card
@@ -37,18 +35,18 @@ function geraCard(filme) {
   var h3 = document.createElement("h3");
   var titulo = document.createTextNode(filme["nome"]);
   h3.appendChild(titulo);
-  // Avaliação
-  var avaliacao = document.createElement("p");
-  var sinopse = document.createTextNode("Nota: "+filme["nota"]+"/10");
-  avaliacao.appendChild(sinopse);
-  // Gêneros
-  var genero = document.createElement("p");
-  var txt_genero = document.createTextNode(generos);
-  genero.appendChild(txt_genero);
+  // Resumo
+  var p = document.createElement("p");
+  var descricao = document.createTextNode(filme["descricao"]);
+  p.appendChild(descricao);
+  // Ano de lançamento
+  var ano = document.createElement("p");
+  var txt_ano = document.createTextNode("("+filme["ano"]+")");
+  ano.appendChild(txt_ano);
 
   back.appendChild(h3);
-  back.appendChild(avaliacao);
-  back.appendChild(genero);
+  back.appendChild(p);
+  back.appendChild(ano);
 
   front.appendChild(img);
 
@@ -189,7 +187,7 @@ function goToAnima(nome, event){
 
 function loadAnima(){
   if(sessionStorage.animacao == undefined) {
-    //location.href = "./index.html";
+    location.href = "./index.html";
   }
 
   var nome = sessionStorage.animacao;
@@ -199,10 +197,14 @@ function loadAnima(){
     filmes = json;
   })
   .then(function(){
+    //Busca pelo filme com o nome selecionado
     for(filme in filmes) {
       if(nome == filmes[filme]["nome"]){
         animacao = filmes[filme];
       }
+    }
+    if(animacao == {}){
+      location.href = "./index.html";
     }
   })
   .then(function(){
@@ -224,6 +226,7 @@ function loadAnima(){
     for(scr_shots in animacao["screenshots"]){
       var img = document.createElement("img");
       img.setAttribute("src", animacao["screenshots"][scr_shots]);
+      img.className = "img-responsive";
       screen_s.appendChild(img);
     }
 
