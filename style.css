@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 .menu {
-  width: 80%;
+  width: 100%;
   font-size: 20px;
   position: sticky;
   top: 10px;
-  left: 10%;
   list-style-type: none;
   background-color: #292b3f;
   vertical-align: middle;
   z-index: 5;
   display: flex;
   align-items: center;
+  border-radius: 0 0 10px 10px;
 }
 
 #itens-lista {
@@ -39,6 +39,7 @@
   min-width: 144px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
   z-index: 1;
+  border-radius: 5px;
 }
 
 .dropdown-content a {
@@ -67,8 +68,6 @@ li a, .dropbtn {
   color: #ffb223;
 }
 
-
-
 .top {
   width:90%;
   font-size: 20px;
@@ -83,7 +82,6 @@ li a, .dropbtn {
 .imgcarro{
   width:100%;
 }
-
 
 .imgcard{
   box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.4);
@@ -167,6 +165,7 @@ main {
   background-color: #292b3f;
   width: 20%;
   height: 95%;
+  border-radius: 10px;
 }
 
 .table {
@@ -193,7 +192,7 @@ td{
   width: 79%;
   display: flex;
   flex-direction: column;
-
+  border-radius: 10px;
   padding: 16px;
 }
 
@@ -237,6 +236,11 @@ iframe {
   text-decoration: none;
 }
 
+.review {
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+
 p, tr, {
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 1.1em;
@@ -247,3 +251,24 @@ th,
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Quicksand', sans-serif;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #292b3f;
+  color: #ffb223;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
+  margin-top: 20%;
+}
+
+footer > a {
+  text-decoration: none;
+  color: #ffb223;
+  border: 1px #292b3f;
+  border-radius: 5px;
+}
+
+footer > a:hover { color: #7cbbef; }
