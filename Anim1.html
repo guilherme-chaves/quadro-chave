@@ -13,31 +13,46 @@
 </head>
 <body>
 	<!-----------menu---------->
-		<nav class="menu">
+	<nav class="menu">
 		<div style="flex-grow: 1">
 			<img src="logo.jpg" style="width:60px; margin-left: 3vw">
 		</div>
 		<div id="itens-lista" style="flex-grow: 8">
 			<li>
-				<a href="index.html">Home</a>
+				<a class="dropbtn" href="index.html">Home</a>
 			</li>
-			<li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Gêneros</a>
-				<div class="dropdown-content">
-					<a href="#">ação</a>
-					<a href="#">aventura</a>
-					<a href="#">romance</a>
+			<li>
+				<div class="dropdown">
+					<a class="dropbtn">Gêneros 
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<div class="dropdown-content">
+						<a href="#">Ação/Aventura</a>
+						<a href="#">Romance</a>
+						<a href="#">Anime</a>
+						<a href="#">Drama</a>
+						<a href="#">Premiado</a>
+						<a href="#">Nacional</a>
+					</div>
 				</div>
+
 			</li>
-			<li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Anos</a>
-				<div class="dropdown-content">
-					<a href="#">2018</a>
-					<a href="#">2016</a>
-					<a href="#">2001</a>
+			<li>
+				<div class="dropdown">
+					<a class="dropbtn">Anos 
+						<i class="fa fa-caret-down"></i>
+					</a>
+					<div class="dropdown-content">
+						<a href="#">2019-2015</a>
+						<a href="#">2014-2010</a>
+						<a href="#">2009-2005</a>
+						<a href="#">2004-2000</a>
+						<a href="#">1999-1995</a>
+						<a href="#">1994-1990</a>
+						<a href="#">1989-19XX</a>
+					</div>
 				</div>
-			</li>
-		</div>
+
 		<div style="flex-grow: 2; position: absolute; right: 16px;">
 			<input type="text" id="pesq" name="pesquisar" placeholder="Pesquisar..." style="width: 14vw;" onkeyup="pesquisar(value, event)" />
 		</div>
