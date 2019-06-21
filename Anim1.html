@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="script.js"></script>
 </head>
-<body>
+<body onload="loadAnima()">
 	<!-----------menu---------->
 	<nav class="menu">
 		<div style="flex-grow: 1">
@@ -27,12 +27,12 @@
 						<i class="fa fa-caret-down"></i>
 					</a>
 					<div class="dropdown-content">
-						<a href="#">Ação/Aventura</a>
-						<a href="#">Romance</a>
-						<a href="#">Anime</a>
-						<a href="#">Drama</a>
-						<a href="#">Premiado</a>
-						<a href="#">Nacional</a>
+						<a href="#" onclick="filtrar('Ação/Aventura', 'generos', event)">Ação/Aventura</a>
+						<a href="#" onclick="filtrar('Romance', 'generos', event)">Romance</a>
+						<a href="#" onclick="filtrar('Anime', 'generos', event)">Anime</a>
+						<a href="#" onclick="filtrar('Drama', 'generos', event)">Drama</a>
+						<a href="#" onclick="filtrar('Premiado', 'generos', event)">Premiado</a>
+						<a href="#" onclick="filtrar('Nacional', 'generos', event)">Nacional</a>
 					</div>
 				</div>
 
@@ -43,13 +43,13 @@
 						<i class="fa fa-caret-down"></i>
 					</a>
 					<div class="dropdown-content">
-						<a href="#">2019-2015</a>
-						<a href="#">2014-2010</a>
-						<a href="#">2009-2005</a>
-						<a href="#">2004-2000</a>
-						<a href="#">1999-1995</a>
-						<a href="#">1994-1990</a>
-						<a href="#">1989-19XX</a>
+						<a href="#" onclick="filtrar('2019/2015', 'ano', event)">2019-2015</a>
+						<a href="#" onclick="filtrar('2014/2010', 'ano', event)">2014-2010</a>
+						<a href="#" onclick="filtrar('2009/2005', 'ano', event)">2009-2005</a>
+						<a href="#" onclick="filtrar('2004/2000', 'ano', event)">2004-2000</a>
+						<a href="#" onclick="filtrar('1999/1995', 'ano', event)">1999-1995</a>
+						<a href="#" onclick="filtrar('1994/1990', 'ano', event)">1994-1990</a>
+						<a href="#" onclick="filtrar('1989/1900', 'ano', event)">1989-19XX</a>
 					</div>
 				</div>
 			</li>
@@ -64,50 +64,66 @@
 		<div class="container-informacao">
 			<section class="row"> <!-- Div do título -->
 				<div class="col-md-6">
-					<h2>
-						<strong>Toy Story 3</strong>
+					<h2 style="color: #ffb223;">
+						<strong id="titulo-filme">Toy Story 3</strong>
 					</h2>
-					<p>Categoria 1, Categoria 2</p>
+					<p id="categorias-filme">Categoria 1, Categoria 2</p>
 				</div>
 				<div class="col-md-6 notas">
 					<h3>
-						<strong>9,5<sub>/10</sub></strong>
+						<strong>
+							<span id="nota-filme">9,5</span>
+							<sub>/10</sub>
+						</strong>
 					</h3>
 				</div>
 			</section>
 			<section class="row"> <!-- div das informações -->
 				<div class="col-md-4">
-					<img class="imgcarro" src="imagens/toy3post.jpg" alt="Toy Story"/>
+					<img class="imgcarro" src="imagens/toy3post.jpg" alt="Toy Story" id="poster-filme"/>
 				</div>
 				<div class="col-md-8">
 					<div class="row">
 						<div class="col-md-6">
-							<p><strong>Duração: </strong>90 min</p>
-							<p><strong>Ano: </strong>2016</p>
-							<p><strong>País: </strong>Estados Unidos</p>
+							<p>
+								<strong>Duração: </strong>
+								<span id="duracao-filme">90 min</span>
+							</p>
+							<p>
+								<strong>Ano: </strong><span id="ano-filme">2016</span>
+							</p>
 						</div>
 						<div class="col-md-6">
-							<p><strong>Direção: </strong>Naruto</p>
-							<p><strong>Cast: </strong>Pessoa 1, Pessoa 2, Pessoa 3</p>
+							<p>
+								<strong>País: </strong>
+								<span id="pais-filme">Estados Unidos</span>
+							</p>
+							<p>
+								<strong>Direção: </strong>
+								<span id="diretor-filme">Naruto</span>
+							</p>
 						</div>
 					</div>
 					<div>
-						<p><strong>Sinopse:</strong> Essa é a sinopse do filme</p>
+						<p>
+							<strong>Sinopse:</strong>
+							<span id="sinopse-filme">Essa é a sinopse do filme</span>
+						</p>
 					</div>
 				</div>
 			</section>
 
-<<<<<<< HEAD
+			<<<<<<< HEAD
 
-		
 
-=======
+
+			=======
 			<hr> <!-- Linha divisória -->
 
 			<section class="row"><!----- div do trailer---->
 				<div class="col-md-12">
 					<h3><strong>Assista ao trailer:</strong></h3>
-					<iframe src="https://www.youtube.com/embed/JcpWXaA2qeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/JcpWXaA2qeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="trailer-filme"></iframe>
 				</div>
 			</section>
 
@@ -119,7 +135,7 @@
 				<img src="imagens/toy32.png">
 				<img src="imagens/toy33.jpg">
 			</section>
->>>>>>> master
+			>>>>>>> master
 
 			<hr>
 
@@ -134,71 +150,71 @@
 						</div>
 					</a>
 					<div id="review" class="panel-collapse collapse">
-						<div class="panel-body">
+						<div class="panel-body" id="review-filme">
 							<p>Essa é a nossa review sobre o filme</p>
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
-<!--barra dos tops a direita--->
-	<div class="barra">
-		<div class="top">
-			<table class="table table-bordered">
-				<tr>
-					<th>Top 5 animações</th>
-				</tr>
-				<tr>
-					<td><a href="#">Rei Leão<a></td>
-				</tr>
-				<tr>
-					<td><a href="#">A Viagem de Chihiro<a></td>
-				</tr>
-				<tr>
-					<td><a href="#">Tumulo dos Vagalumes<a></td>
-				</tr>
-				<tr>
-					<td><a href="#">Viva: A Vida é Uma Festa<a></td>
-				</tr>
-				<tr>
-					<td><a href="#">Divertidamente<a></td>
-				</tr>
-			</table>
+		<!--barra dos tops a direita--->
+		<div class="barra">
+			<div class="top">
+				<table class="table table-bordered">
+					<tr>
+						<th>Top 5 animações</th>
+					</tr>
+					<tr>
+						<td><a href="#">Rei Leão</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">A Viagem de Chihiro</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Tumulo dos Vagalumes</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Viva: A Vida é Uma Festa</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Divertidamente</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="top">
+				<table class="table table-bordered">
+					<tr>
+						<th>Top Maiores Bilheterias</th>
+					</tr>
+					<tr>
+						<td><a href="#">Frozen</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Minions</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Toy Story 3</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Os Incrivei 2</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">Meu Malvado Favorito 3</a></td>
+					</tr>
+				</table>
+			</div>
 		</div>
-		<div class="top">
-			<table class="table table-bordered">
-				<tr>
-					<th>Top Maiores Bilheterias</th>
-				</tr>
-				<tr>
-					<td><a href="#">Frozen<a></td>
-				</tr>
-				<tr>
-					<td><a href="#">Minions<a></td>
-				</tr>
-				<tr>
-					<td><a href="#">Toy Story 3<a></td>
-				</tr>
-				<tr>
-					<td><a href="#">Os Incrivei 2<a></td>
-				</tr>
-				<tr>
-					<td><a href="#">Meu Malvado Favorito 3<a></td>
-				</tr>
-			</table>
-		</div>
-	</div>
-</main>
 	</main>
-	<script>
-		$(document).ready(function(){
-			$("#review").on("hide.bs.collapse", function(){
-				$(".panel-title").html('Confira nossa review <span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>');
-			});
-			$("#review").on("show.bs.collapse", function(){
-				$(".panel-title").html('Confira nossa review <span class="glyphicon glyphicon-chevron-up" style="float: right;"></span>');
-			});
+</main>
+<script>
+	$(document).ready(function(){
+		$("#review").on("hide.bs.collapse", function(){
+			$(".panel-title").html('Confira nossa review <span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>');
 		});
-	</script>
+		$("#review").on("show.bs.collapse", function(){
+			$(".panel-title").html('Confira nossa review <span class="glyphicon glyphicon-chevron-up" style="float: right;"></span>');
+		});
+	});
+</script>
 </body>
 </html>

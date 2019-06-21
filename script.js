@@ -14,9 +14,12 @@ var loadData = new Promise(function (resolve, reject) {
 function geraCard(filme) {
   var generos = filme["generos"].toString();
   generos = generos.replace(/,/g, ", ");
+  var onclick = "goToAnima('" + filme["nome"] + "', event)";
+
   // Criação do card
   var card = document.createElement("div");
   card.className = "flip-card";
+  card.setAttribute("onclick", onclick);
   var inner = document.createElement("div");
   inner.className = "flip-card-inner";
 
@@ -32,7 +35,7 @@ function geraCard(filme) {
   back.className = "flip-card-back";
   //Titulo
   var h3 = document.createElement("h3");
-  var titulo = document.createTextNode(filme["name"]);
+  var titulo = document.createTextNode(filme["nome"]);
   h3.appendChild(titulo);
   // Avaliação
   var avaliacao = document.createElement("p");
@@ -69,12 +72,16 @@ function pesquisar(value, event) {
     value = value.toString();
     value = value.replace("<", "");
     value = value.replace(">", "");
+    value.trim();
     sessionStorage.setItem("palavra", value);
     location.href = "./pesquisa.html";
   }
 }
 
 function loadPesquisa(){
+  if(sessionStorage.palavra == undefined || sessionStorage.palavra == "") {
+    location.href = "./index.html";
+  }
   var filmes = {};
   var resultados = [];
   var palavra = sessionStorage.palavra;
@@ -86,7 +93,7 @@ function loadPesquisa(){
   })
   .then(function() {
     for (filme in filmes) {
-      if(filmes[filme]["name"].includes(palavra)){
+      if(filmes[filme]["nome"].includes(palavra)){
         resultados.push(filmes[filme]);
       }
     }
@@ -109,26 +116,43 @@ function loadPesquisa(){
 function filtrar(value, tipo, event) {
   event.preventDefault();
   value = value.toString();
+  value.trim();
   tipo = tipo.toString();
+  tipo.trim();
   sessionStorage.setItem("valor", value);
   sessionStorage.setItem("tipo", tipo);
-  location.href = "./filtro.html";
+  location.href = "./filtrar.html";
 }
 
 function loadFiltro() {
+  if(sessionStorage.valor == undefined || sessionStorage.tipo == undefined) {
+    location.href = "./index.html";
+  }
   var filmes = {};
   var resultados = [];
   var valor = sessionStorage.valor;
   var tipo = sessionStorage.tipo;
+  document.getElementById("filtro-pesquisa").innerHTML = valor;
+  var container = document.getElementById("card-cont");
+
   loadData.then(function(json) {
     filmes = json;
   })
   .then(function(){
     for(filme in filmes) {
-      if(filmes[filme][tipo] == valor){
-        resultados.push(filmes[filme]);
+      if(tipo == "generos"){
+        if(filmes[filme][tipo].toString().includes(valor)){
+          resultados.push(filmes[filme]);
+        }
+      } else if (tipo == "ano"){
+        var anos = valor.split("/");
+        if(filmes[filme][tipo] < anos[0] && filmes[filme][tipo] > anos[1]){
+          resultados.push(filmes[filme]);
+        }
       }
+      
     }
+    console.log(resultados);
   })
   .then(function(){
     if(resultados.length > 0){
@@ -141,5 +165,57 @@ function loadFiltro() {
       p.appendChild(txt);
       container.appendChild(p);
     }
+  })
+}
+
+function goToAnima(nome, event){
+  event.preventDefault();
+  nome = nome.toString();
+  nome.trim();
+  sessionStorage.setItem("animacao", nome);
+  location.href = "./Anim1.html";
+}
+
+function loadAnima(){
+  if(sessionStorage.animacao == undefined) {
+    //location.href = "./index.html";
+  }
+
+  var nome = sessionStorage.animacao;
+  var filmes = {};
+  var animacao = {};
+  loadData.then(function(json) {
+    filmes = json;
+  })
+  .then(function(){
+    for(filme in filmes) {
+      if(nome == filmes[filme]["nome"]){
+        animacao = filmes[filme];
+      }
+    }
+  })
+  .then(function(){
+    var generos = animacao["generos"].toString();
+    generos = generos.replace(/,/g, ", ");
+    document.getElementById("titulo-filme").innerHTML = animacao["nome"];
+    document.getElementById("categorias-filme").innerHTML = generos;
+    document.getElementById("nota-filme").innerHTML = animacao["nota"];
+    document.getElementById("poster-filme").src = animacao["poster"];
+    document.getElementById("duracao-filme").innerHTML = animacao["duracao"];
+    document.getElementById("ano-filme").innerHTML = animacao["ano"];
+    document.getElementById("pais-filme").innerHTML = animacao["pais"];
+    document.getElementById("diretor-filme").innerHTML = animacao["direcao"];
+    document.getElementById("sinopse-filme").innerHTML = animacao["sinopse"];
+    document.getElementById("trailer-filme").src = animacao["url_video"];
+
+    var screen_s = document.getElementsByClassName("screenshots")[0];
+    screen_s.innerHTML = "";
+    for(scr_shots in animacao["screenshots"]){
+      var img = document.createElement("img");
+      img.setAttribute("src", animacao["screenshots"][scr_shots]);
+      screen_s.appendChild(img);
+    }
+
+    document.getElementById("review-filme").innerHTML = animacao["review"];
   })
 }
