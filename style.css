@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
+
+/*-------menu superior*/
 .menu {
   width: 100%;
   font-size: 20px;
@@ -68,6 +70,15 @@ li a, .dropbtn {
   color: #ffb223;
 }
 
+/*-------- DIV mãe do corpo incluindo coluna esquerda e dereita---*/
+main {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 1600px;
+  margin-top: 20px;
+}
+
 .top {
   width:90%;
   font-size: 20px;
@@ -82,6 +93,9 @@ li a, .dropbtn {
 .imgcarro{
   width:100%;
 }
+}
+
+/*---------------------cartões flips*/
 
 .imgcard{
   box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.4);
@@ -89,7 +103,6 @@ li a, .dropbtn {
   height:170px;
 }
 
-/*cartões flips*/
 .card-container{
  margin-top: 4vh;
  margin-left: 1.2vh;
@@ -147,13 +160,7 @@ li a, .dropbtn {
   padding: 4px;
 }
 
-main {
-  position: absolute;
-  left: 10%;
-  width: 80%;
-  height: 1600px;
-  margin-top: 20px;
-}
+
 
 .barra {
   position: absolute;
@@ -171,7 +178,7 @@ main {
 .table {
   background: white;
 }
-
+/*----------Textos dos Tops*/
 td a {
   color: #292b3f;
   text-decoration: none;
@@ -184,6 +191,7 @@ td{
   font-size: 1vw;
 }
 
+/*------ Corpo principal A esqueda*/
 .container-informacao {
   position: absolute;
   left: 0;
@@ -210,6 +218,7 @@ iframe {
   height: 520px;
 }
 
+/*--------------ScreenShots*/
 .screenshots {
   display: flex;
   justify-content: center;
@@ -222,13 +231,17 @@ iframe {
   max-width: 30%;
 }
 
+
+
+/*---------Review---*/
+
 .panel-body{
   color: #292b3f;
 }
-
 .panel {
-  background: #7cbbef;
+  background: #e5e5e5;
   border: none;
+  font-size: 20px;
 }
 
 .panel > a {
@@ -241,6 +254,7 @@ iframe {
   margin-bottom: 120px;
 }
 
+/*--------- Textos do Site Todo--------*/
 p, tr, {
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 1.1em;
@@ -252,6 +266,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Quicksand', sans-serif;
 }
 
+
+/*-----------------rodapé*/
 footer {
   position: fixed;
   bottom: 0;

@@ -7,11 +7,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="script.js"></script>
 </head>
 <body onload="loadAnima()">
-	<!-- Menu superior -->
+	<!-----------menu---------->
 	<nav class="menu">
 		<div style="flex-grow: 1">
 			<a href="index.html">
@@ -28,14 +29,14 @@
 						<i class="fa fa-caret-down"></i>
 					</a>
 					<div class="dropdown-content">
-						<a href="#" onclick="filtrar('Aventura e Ação', 'generos', event)">Ação e Aventura</a>
+						<a href="#" onclick="filtrar('Ação/Aventura', 'generos', event)">Ação/Aventura</a>
 						<a href="#" onclick="filtrar('Romance', 'generos', event)">Romance</a>
-						<a href="#" onclick="filtrar('Infantil', 'generos', event)">Infantil</a>
 						<a href="#" onclick="filtrar('Anime', 'generos', event)">Anime</a>
 						<a href="#" onclick="filtrar('Drama', 'generos', event)">Drama</a>
 						<a href="#" onclick="filtrar('Premiado', 'generos', event)">Premiado</a>
 					</div>
 				</div>
+
 			</li>
 			<li>
 				<div class="dropdown">
@@ -64,9 +65,9 @@
 		<div class="container-informacao">
 			<section class="row"> <!-- Div do título -->
 				<div class="col-md-6">
-					<h2 style="color: #ffb223;">
+					<h1 style="color: #ffb223;">
 						<strong id="titulo-filme">Toy Story 3</strong>
-					</h2>
+					</h1>
 					<p id="categorias-filme">Categoria 1, Categoria 2</p>
 				</div>
 				<div class="col-md-6 notas">
@@ -80,7 +81,7 @@
 			</section>
 			<section class="row"> <!-- div das informações -->
 				<div class="col-md-4">
-					<img class="imgcarro" src="imagens/toy3post.jpg" alt="Toy Story" id="poster-filme"/>
+					<img class="imgcarro" src="imagens/toy3post.jpg" alt="Poster Do Filme" id="poster-filme"/>
 				</div>
 				<div class="col-md-8">
 					<div class="row">
@@ -117,30 +118,31 @@
 
 			<section class="row"><!----- div do trailer---->
 				<div class="col-md-12">
-					<h3><strong>Assista ao trailer:</strong></h3>
-					<iframe src="https://www.youtube.com/embed/JcpWXaA2qeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="trailer-filme"></iframe>
+					<h2><strong>Assista ao trailer:</strong></h2>
+					<iframe src="https://www.youtube.com/embed/JcpWXaA2qeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="trailer-filme" alt="Video do trailer do filme linkado ao youtube "></iframe>
 				</div>
 			</section>
 
 			<hr>
 
-			<h3><strong>Screenshots:</strong></h3>
+			<h2><strong>Screenshots:</strong></h2>
 			<section class="screenshots"><!----- div dos screeshots---->
-				<img src="imagens/toy31.jpg">
-				<img src="imagens/toy32.png">
-				<img src="imagens/toy33.jpg">
+				<img src="imagens/toy31.jpg" alt="Screenshot de uma cena do filme">
+				<img src="imagens/toy32.png" alt="Screenshot de uma cena do filme">
+				<img src="imagens/toy33.jpg" alt="Screenshot de uma cena do filme">
 			</section>
 
 			<hr>
 
 			<section class="panel-group review">
+				<h2><b>Review com SPOILERS</b></h2>
 				<div class="panel panel-default">
 					<a data-toggle="collapse" href="#review">
 						<div class="panel-heading">
-							<h4 class="panel-title">
-								Confira nossa review
+							<h3 class="panel-title">
+								Ver Review
 								<span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>
-							</h4>
+							</h3>
 						</div>
 					</a>
 					<div id="review" class="panel-collapse collapse">
@@ -154,64 +156,67 @@
 		<!--barra dos tops a direita--->
 		<div class="barra">
 			<div class="top">
-				<table class="table">
+				<table class="table table-bordered">
 					<tr>
 						<th>Top 5 animações</th>
 					</tr>
 					<tr>
-						<td onclick="goToAnima('Rei Leão', event)"><a href="#">Rei Leão</a></td>
+						<td><a href="#">Rei Leão</a></td>
 					</tr>
 					<tr>
-						<td onclick="goToAnima('A Viagem de Chihiro', event)"><a href="#">A Viagem de Chihiro</a></td>
+						<td><a href="#">A Viagem de Chihiro</a></td>
 					</tr>
 					<tr>
-						<td onclick="goToAnima('Túmulo dos Vagalumes', event)"><a href="#">Tumulo dos Vagalumes</a></td>
+						<td><a href="#">Tumulo dos Vagalumes</a></td>
 					</tr>
 					<tr>
-						<td onclick="goToAnima('Viva: A Vida É Uma Festa', event)"><a href="#">Viva: A Vida é Uma Festa</a></td>
+						<td><a href="#">Viva: A Vida é Uma Festa</a></td>
 					</tr>
 					<tr>
-						<td onclick="goToAnima('Divertida Mente', event)"><a href="#">Divertidamente</a></td>
+						<td><a href="#">Divertidamente</a></td>
 					</tr>
 				</table>
 			</div>
 			<div class="top">
-				<table class="table">
+				<table class="table table-bordered">
 					<tr>
 						<th>Top Maiores Bilheterias</th>
 					</tr>
 					<tr>
-						<td onclick="goToAnima('Frozen', event)"><a href="#">Frozen</a></td>
+						<td><a href="#">Frozen</a></td>
 					</tr>
 					<tr>
-						<td onclick="goToAnima('Minions', event)"><a href="#">Minions</a></td>
+						<td><a href="#">Minions</a></td>
 					</tr>
 					<tr>
-						<td onclick="goToAnima('Toy Story 3', event)"><a href="#">Toy Story 3</a></td>
+						<td><a href="#">Toy Story 3</a></td>
 					</tr>
 					<tr>
-						<td onclick="goToAnima('Os Incríveis 2', event)"><a href="#">Os Incríveis 2</a></td>
+						<td><a href="#">Os Incrivei 2</a></td>
 					</tr>
 					<tr>
-						<td onclick="goToAnima('Meu Malvado Favorito 3', event)"><a href="#">Meu Malvado Favorito 3</a></td>
+						<td><a href="#">Meu Malvado Favorito 3</a></td>
 					</tr>
 				</table>
 			</div>
 		</div>
+
 	</main>
+
+</main>
 	<footer id="footer">
 		<h5>Quadro Chave &copy; 2019</h5>
 		<a href="#inicio">Voltar ao início</a>
 	</footer>
-	<script>
-		$(document).ready(function(){
-			$("#review").on("hide.bs.collapse", function(){
-				$(".panel-title").html('Confira nossa review <span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>');
-			});
-			$("#review").on("show.bs.collapse", function(){
-				$(".panel-title").html('Confira nossa review <span class="glyphicon glyphicon-chevron-up" style="float: right;"></span>');
-			});
+<script>
+	$(document).ready(function(){
+		$("#review").on("hide.bs.collapse", function(){
+			$(".panel-title").html('Confira a review <span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>');
 		});
-	</script>
+		$("#review").on("show.bs.collapse", function(){
+			$(".panel-title").html('Confira a review <span class="glyphicon glyphicon-chevron-up" style="float: right;"></span>');
+		});
+	});
+</script>
 </body>
 </html>
