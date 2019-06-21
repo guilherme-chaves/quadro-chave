@@ -1,7 +1,17 @@
 {
   "0": {
-    "name": "Toy Story 1",
+    "nome": "Toy Story 1",
+    "generos": ["Aventura", "Infantil", "Comédia"],
+    "nota": 9,
+    "duracao": "90 min",
+    "ano": "2016",
+    "pais": "Estados Unidos",
+    "direcao": "Fulano",
+    "cast": ["Pessoa 1", "Pessoa 2"],
     "sinopse": "Isso é para ser uma sinopse",
-    "generos": ["Aventura", "Infantil", "Comédia"]
+    "review": "Filme muito bom",
+    "poster": "imagens/nomedaimagem.jpg",
+    "screenshots": ["imagens/nomedoscreenshot.jpg", "imagens/nomedoscreenshot2.jpg", "imagens/nomedoscreenshot3.jpg"],
+    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg",
   }
 }
