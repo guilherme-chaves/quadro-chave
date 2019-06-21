@@ -11,26 +11,22 @@
     "review": "Toy Story 3 é épico desde a primeira cena. A sequência de abertura já é um aquecimento para o que virá a seguir: muita aventura, humor na medida certa e uma gostosa nostalgia - Omelete",
     "poster": "imagens/toy3post.jpg",
     "screenshots": ["imagens/toy31.jpg", "imagens/toy32.png", "imagens/toy33.jpg"],
-    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg",
-  }
-}
-{
+    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg"
+  },
   "1": {
-    "nome": " Rei Leão ",
+    "nome": "Rei Leão",
     "generos": ["Aventura", "Premiado", "Drama", "Premiados", "infantil"],
     "nota": 9,
     "duracao": "1h 29min",
     "ano": "1994",
     "pais": "Estados Unidos",
-    "Direção": "Rob Minkoff","Roger Allers"
+    "Direção": "Rob Minkoff, Roger Allers",
     "sinopse": "Simba (Donald Glover) é um jovem leão cujo destino é se tornar o rei da selva. Entretanto, uma armadilha elaborada por seu tio Scar (Chiwetel Ejiofor) faz com que Mufasa (James Earl Jones), o atual rei, morra ao tentar salvar o filhote. Consumido pela culpa, Simba deixa o reino rumo a um local distante, onde encontra amigos que o ensinam a mais uma vez ter prazer pela vida.",
     "review": "A maior obra de arte produzida pelos estúdios Disney. Realmente, este é filme que tem uma merecida nota 10. Tudo nele é perfeito e fiel às paisagens da África. Trilha Sonora jamais vista nos cinemas e uma categórica façanha dos produtores gráficos. - Cinema com Rapadura",
     "poster": "imagens/reileaopost.jpg",
     "screenshots": ["imagens/reileao1.jpg", "imagens/reileao2.png", "imagens/reileao3.jpg"],
-    "url_video": "https://www.youtube.com/watch?v=WoXSvW-XVXc",
-  }
-}
-{
+    "url_video": "https://www.youtube.com/watch?v=WoXSvW-XVXc"
+  },
   "2": {
     "nome": " A Viagem de Chihiro",
     "generos": ["Aventura", "Premiado","Anime","Drama", "infantil"],
@@ -38,15 +34,13 @@
     "duracao": "2h 5min",
     "ano": "2001",
     "pais": "Japão",
-    "Direção": "Hayao Miyazaki","Kirk Wise"
+    "Direção": "Hayao Miyazaki, Kirk Wise",
     "sinopse": "Chihiro é uma garota de 10 anos que acredita que todo o universo deve atender aos seus caprichos. Ao descobrir que vai se mudar, ela fica furiosa. Na viagem, Chihiro percebe que seu pai se perdeu no caminho para a nova cidade, indo parar defronte um túnel aparentemente sem fim, guardado por uma estranha estátua. Curiosos, os pais de Chihiro decidem entrar no túnel e Chihiro vai com eles. Chegam numa cidade sem nenhum habitante e os pais de Chihiro decidem comer a comida de uma das casas, enquanto a menina passeia. Ela encontra com Haku, garoto que lhe diz para ir embora o mais rápido possível e ao reencontrar seus pais, Chihiro fica surpresa ao ver que eles se transformaram em gigantescos porcos. É o início da jornada de Chihiro por um mundo fantasma, povoado por seres fantásticos, no qual humanos não são bem-vindos.",
     "review": "É provavelmente a animação convencional de melhor qualidade de todos os tempos, um tributo ao enorme talento dos animadores do Studio Ghibli (do próprio Miyazaki), que se superam a cada nova investida - Omelete",
     "poster": "imagens/chihiropost.jpg",
     "screenshots": ["imagens/chihiro1.jpg", "imagens/chihiro2.jpg", "imagens/chihiro3.jpg"],
-    "url_video": "https://www.youtube.com/watch?v=SgZI655GgHk",
-  }
-}
-{
+    "url_video": "https://www.youtube.com/watch?v=SgZI655GgHk"
+  },
   "3": {
     "nome": "Túmulo dos Vagalumes",
     "generos": ["Anime", "Premiado", "Drama"],
@@ -59,10 +53,8 @@
     "review": "Sem falar que é um filme lindo, a crítica social mexe com você e te faz acreditar que você vivenciou aquilo junto aos personagens. Uma lição que provavelmente você não vai esquecer jamais. - Pipocando Notícias",
     "poster": "imagens/vagalumespost.jpg",
     "screenshots": ["imagens/vagalumes1.jpg", "imagens/vagalumes2.png", "imagens/vagalumes3.jpg"],
-    "url_video": "https://www.youtube.com/watch?v=tC0Ug7sY0wE",
-  }
-}
-{
+    "url_video": "https://www.youtube.com/watch?v=tC0Ug7sY0wE"
+  },
   "4": {
     "nome": "Viva: A Vida É Uma Festa",
     "generos": ["Aventura", "Premiado", "Comédia", "infantil"],
@@ -70,57 +62,53 @@
     "duracao": "1h 49min",
     "ano": "2017",
     "pais": "Estados Unidos",
-    "Direção": "Lee Unkrich","Adrian Molina"
+    "Direção": "Lee Unkrich, Adrian Molina",
     "sinopse": "Miguel é um menino de 12 anos que quer muito ser um músico famoso, mas ele precisa lidar com sua família que desaprova seu sonho. Determinado a virar o jogo, ele acaba desencadeando uma série de eventos ligados a um mistério de 100 anos. A aventura, com inspiração no feriado mexicano do Dia dos Mortos, acaba gerando uma extraordinária reunião familiar.",
     "review": "Como era de se esperar de uma produção Pixar, os visuais em 'Viva - A Vida é uma Festa' saltam da tela, fazendo a cidade de Santa Cecília brilhar com vida e energia. Mas a real diversão, imaginação e criatividade cinematográfica é encontrada através das pontes que separam o mundo dos vivos e mortos. - Chicago Sun-Times",
     "poster": "imagens/vivapost.jpg",
     "screenshots": ["imagens/viva1.jpg", "imagens/viva2.png", "imagens/viva3.jpg"],
-    "url_video": "https://www.youtube.com/watch?v=iLmZZV-Nkuk",
-  }
-}
-{
-  "4": {
+    "url_video": "https://www.youtube.com/watch?v=iLmZZV-Nkuk"
+  },
+  "5": {
     "nome": "Viva: A Vida É Uma Festa",
     "generos": ["Aventura", "Premiado", "Comédia", "infantil"],
     "nota": 9,
     "duracao": "1h 49min",
     "ano": "2017",
     "pais": "Estados Unidos",
-    "Direção": "Lee Unkrich","Adrian Molina"
+    "Direção": "Lee Unkrich, Adrian Molina",
     "sinopse": "",
     "review": "",
     "poster": "imagens/toy3post.jpg",
     "screenshots": ["imagens/toy31.jpg", "imagens/toy32.png", "imagens/toy33.jpg"],
-    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg",
-  }
-}{
-  "4": {
+    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg"
+  },
+  "6": {
     "nome": "Viva: A Vida É Uma Festa",
     "generos": ["Aventura", "Premiado", "Comédia", "infantil"],
     "nota": 9,
     "duracao": "1h 49min",
     "ano": "2017",
     "pais": "Estados Unidos",
-    "Direção": "Lee Unkrich","Adrian Molina"
+    "Direção": "Lee Unkrich, Adrian Molina",
     "sinopse": "",
     "review": "",
     "poster": "imagens/toy3post.jpg",
     "screenshots": ["imagens/toy31.jpg", "imagens/toy32.png", "imagens/toy33.jpg"],
-    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg",
-  }
-}{
-  "4": {
+    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg"
+  },
+  "7": {
     "nome": "Viva: A Vida É Uma Festa",
     "generos": ["Aventura", "Premiado", "Comédia", "infantil"],
     "nota": 9,
     "duracao": "1h 49min",
     "ano": "2017",
     "pais": "Estados Unidos",
-    "Direção": "Lee Unkrich","Adrian Molina"
+    "Direção": "Lee Unkrich, Adrian Molina",
     "sinopse": "",
     "review": "",
     "poster": "imagens/toy3post.jpg",
     "screenshots": ["imagens/toy31.jpg", "imagens/toy32.png", "imagens/toy33.jpg"],
-    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg",
+    "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg"
   }
 }
