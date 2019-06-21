@@ -1,4 +1,5 @@
 var loadData = new Promise(function (resolve, reject) {
+  // Procura pelo arquivo JSON e o converte para um objeto JS (função assíncrona, por isso é uma Promise)
   var req = new XMLHttpRequest();
   req.open("GET", "filmes.json", true);
   req.overrideMimeType("application/json");
@@ -12,6 +13,7 @@ var loadData = new Promise(function (resolve, reject) {
 });
 
 function geraCard(filme) {
+  //Código para a função a ser chamada
   var onclick = "goToAnima('" + filme["nome"] + "', event)";
 
   // Criação do card
@@ -35,7 +37,7 @@ function geraCard(filme) {
   var h3 = document.createElement("h3");
   var titulo = document.createTextNode(filme["nome"]);
   h3.appendChild(titulo);
-  // Resumo
+  // Resumo do filme
   var p = document.createElement("p");
   var descricao = document.createTextNode(filme["descricao"]);
   p.appendChild(descricao);
@@ -60,6 +62,7 @@ function geraCard(filme) {
 
 
 function listaItens() {
+  // Limpa os dados anteriores
   sessionStorage.clear();
   var filmes = {};
   var container = document.getElementById("card-cont");
@@ -69,6 +72,7 @@ function listaItens() {
   })
   .then(function() {
     for (filme in filmes) {
+      // Adiciona os cards ao container
       container.appendChild(geraCard(filmes[filme]));
     }
   })
@@ -78,10 +82,12 @@ function pesquisar(value, event) {
   event.preventDefault();
   var key = event.which || event.keyCode;
   if(key == 13){
+    // Limpa o valor passado para evitar o uso de códigos
     value = value.toString();
     value = value.replace("<", "");
     value = value.replace(">", "");
     value.trim();
+    // Salva o valor na sessão
     sessionStorage.setItem("palavra", value);
     location.href = "./pesquisa.html";
   }
@@ -89,6 +95,7 @@ function pesquisar(value, event) {
 
 function loadPesquisa(){
   if(sessionStorage.palavra == undefined || sessionStorage.palavra == "") {
+    // Se o valor não estiver carregado, retorna para o index
     location.href = "./index.html";
   }
   var filmes = {};
@@ -101,6 +108,7 @@ function loadPesquisa(){
     filmes = json;
   })
   .then(function() {
+    // Procura filmes que incluam a palavra e os salva no array de resultado
     for (filme in filmes) {
       if(filmes[filme]["nome"].includes(palavra)){
         resultados.push(filmes[filme]);
@@ -111,9 +119,11 @@ function loadPesquisa(){
     console.log(resultados.length);
     if(resultados.length > 0){
       for (item in resultados) {
+        // Adiciona os cards ao container
         container.appendChild(geraCard(resultados[item]));
       }
     } else {
+      // Caso não haja filmes com a palavra
       var txt = document.createTextNode("Desculpa, mas não encontramos nenhum filme nessa categoria =/");
       var p = document.createElement("p");
       p.appendChild(txt);
@@ -124,10 +134,12 @@ function loadPesquisa(){
 
 function filtrar(value, tipo, event) {
   event.preventDefault();
+  // Limpa os valores passado para evitar o uso de códigos
   value = value.toString();
   value.trim();
   tipo = tipo.toString();
   tipo.trim();
+  // Salva os valores na sessão
   sessionStorage.setItem("valor", value);
   sessionStorage.setItem("tipo", tipo);
   location.href = "./filtrar.html";
@@ -135,6 +147,7 @@ function filtrar(value, tipo, event) {
 
 function loadFiltro() {
   if(sessionStorage.valor == undefined || sessionStorage.tipo == undefined) {
+    // Se o valor não estiver carregado, retorna para o index
     location.href = "./index.html";
   }
   var filmes = {};
@@ -143,11 +156,11 @@ function loadFiltro() {
   var tipo = sessionStorage.tipo;
   document.getElementById("filtro-pesquisa").innerHTML = valor;
   var container = document.getElementById("card-cont");
-
   loadData.then(function(json) {
     filmes = json;
   })
   .then(function(){
+    // Procura por filmes com os valores passados, de acordo com o tipo de pesquisa
     for(filme in filmes) {
       if(tipo == "generos"){
         if(filmes[filme][tipo].toString().includes(valor)){
@@ -161,14 +174,15 @@ function loadFiltro() {
       }
       
     }
-    console.log(resultados);
   })
   .then(function(){
     if(resultados.length > 0){
+      // Adiciona os cards ao container
       for(item in resultados){
         container.appendChild(geraCard(resultados[item]));
       }
     } else {
+      // Caso não sejam encontrados resultados
       var txt = document.createTextNode("Desculpa, mas não encontramos nenhum filme nessa categoria =/");
       var p = document.createElement("p");
       p.appendChild(txt);
@@ -181,12 +195,14 @@ function goToAnima(nome, event){
   event.preventDefault();
   nome = nome.toString();
   nome.trim();
+  // Salva o valor na sessão
   sessionStorage.setItem("animacao", nome);
   location.href = "./Anim1.html";
 }
 
 function loadAnima(){
   if(sessionStorage.animacao == undefined) {
+    // Se o valor não estiver carregado, retorna para o index
     location.href = "./index.html";
   }
 

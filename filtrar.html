@@ -7,12 +7,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="script.js"></script>
 </head>
 <body onload="loadFiltro()">
-	<!-- meunu superior--->
+	<!-- Menu superior -->
 	<nav class="menu">
 		<div style="flex-grow: 1">
 			<a href="index.html">
@@ -59,17 +58,17 @@
 			<input type="text" id="pesq" name="pesquisar" placeholder="Pesquisar..." style="width: 14vw;" onkeyup="pesquisar(value, event)" />
 		</div>
 	</nav>
-	<!---div mae--->
+	<!-- Div principal -->
 	<main>
-
-		<!-- div corpo pricipal/ coluna da esquerda--->
+		<!-- Div coluna da esquerda -->
 		<div class="container-informacao">
 			<h3><strong>Resultados para: </strong><span id="filtro-pesquisa"></span></h3>
+			<!-- Container onde os cards serão gerados -->
 			<div class="card-container" id="card-cont">
 			</div>
 		</div>
 
-		<!--- coluna na direita com tops---->
+		<!-- Div coluna da direita -->
 		<div class="barra">
 			<div class="top">
 				<table class="table table-bordered">
