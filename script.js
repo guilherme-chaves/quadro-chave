@@ -60,23 +60,6 @@ function geraCard(filme) {
 
 function listaItens() {
   sessionStorage.clear();
-  var filmes = {};
-  loadData.then(function(json) {
-    filmes = json;
-  })
-  .then(function() {
-    for(filme in filmes){
-      var ul = document.getElementById("lista-filmes");
-      var li = document.createElement("li");
-      var txt = "";
-      for (data in filmes[filme]){
-        var txt = txt.concat(" / ", filmes[filme][data].toString());
-      }
-      var txt_node = document.createTextNode(txt);
-      li.appendChild(txt_node);
-      ul.appendChild(li);
-    }
-  });
 }
 
 function pesquisar(value, event) {
@@ -89,15 +72,6 @@ function pesquisar(value, event) {
     sessionStorage.setItem("palavra", value);
     location.href = "./pesquisa.html";
   }
-}
-
-function filtrar(value, tipo, event) {
-  event.preventDefault();
-  value = value.toString();
-  tipo = tipo.toString();
-  sessionStorage.setItem("filtro", value);
-  sessionStorage.setItem("tipo", tipo);
-  location.href = "./filtro.html";
 }
 
 function loadPesquisa(){
@@ -122,4 +96,35 @@ function loadPesquisa(){
       container.appendChild(geraCard(resultados[item]));
     }
   });
+}
+
+function filtrar(value, tipo, event) {
+  event.preventDefault();
+  value = value.toString();
+  tipo = tipo.toString();
+  sessionStorage.setItem("valor", value);
+  sessionStorage.setItem("tipo", tipo);
+  location.href = "./filtro.html";
+}
+
+function loadFiltro() {
+  var filmes = {};
+  var resultados = [];
+  var valor = sessionStorage.valor;
+  var tipo = sessionStorage.tipo;
+  loadData.then(function(json) {
+    filmes = json;
+  })
+  .then(function(){
+    for(filme in filmes) {
+      if(filmes[filme][tipo] == valor){
+        resultados.push(filmes[filme]);
+      }
+    }
+  })
+  .then(function(){
+    for(item in resultados){
+      container.appendChild(geraCard(resultados[item]));
+    }
+  })
 }
