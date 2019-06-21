@@ -33,14 +33,15 @@
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 144px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 2px 8px;
+  color: #292b3f;
+  font-size: 0.8em;
+  padding: 2px 6px;
   text-decoration: none;
   font-weight: normal;
   display: block;
@@ -63,17 +64,7 @@ li a, .dropbtn {
   color: #ffb223;
 }
 
-.barra {
-  position: absolute;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  background-color: #292b3f;
-  width: 20%;
-  height: 95%;
-}
+
 
 .top {
   width:90%;
@@ -170,16 +161,21 @@ main {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  background-color: #7cbbef;
+  background-color: #292b3f;
   width: 20%;
   height: 95%;
 }
 
-td a{
-  color: white;
+.table {
+  background: white;
+}
+
+td a {
+  color: #292b3f;
+  text-decoration: none;
 }
 th{
-  color: #ffb223;
+  color: #292b3f;
   text-align: center;
 }
 td{
@@ -237,4 +233,15 @@ iframe {
 .panel > a {
   color: #292b3f;
   text-decoration: none;
+}
+
+p, tr, {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+.dropbtn,
+th,
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
 }

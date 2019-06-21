@@ -10,6 +10,7 @@
     "sinopse": "Andy (John Morris) tem 17 anos e está prestes a ir para a faculdade. Desta forma, precisa arrumar o quarto e definir o que irá para o lixo e o que será guardado no sótão. Seus antigos brinquedos, entre eles Buzz Lightyear (Tim Allen), Jessie (Joan Cusack) e o Sr. Cabeça de Batata (Don Rickles), são separados para serem guardados no sótão. Entretanto, uma confusão faz com que a mãe de Andy os coloque no lixo. Woody (Tom Hanks), que será levado por Andy para a faculdade, decide salvá-los. O grupo escapa, mas acaba no carro da mãe de Andy.Ela leva a uma creche diversos brinquedos, entre eles Barbie (Jodi Benson). Ao chegarem, os amigos encontram um universo até então inimaginável, onde os brinquedos sempre têm crianças para brincarem com eles.",
     "review": "Toy Story 3 é épico desde a primeira cena. A sequência de abertura já é um aquecimento para o que virá a seguir: muita aventura, humor na medida certa e uma gostosa nostalgia - Omelete",
     "poster": "imagens/toy3post.jpg",
+    "img_card": "imagens/toy3.jpg",
     "descricao": "Animação infantil de aventura ludica",
     "screenshots": ["imagens/toy31.jpg", "imagens/toy32.png", "imagens/toy33.jpg"],
     "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg"
@@ -25,6 +26,7 @@
     "sinopse": "Simba (Donald Glover) é um jovem leão cujo destino é se tornar o rei da selva. Entretanto, uma armadilha elaborada por seu tio Scar (Chiwetel Ejiofor) faz com que Mufasa (James Earl Jones), o atual rei, morra ao tentar salvar o filhote. Consumido pela culpa, Simba deixa o reino rumo a um local distante, onde encontra amigos que o ensinam a mais uma vez ter prazer pela vida.",
     "review": "A maior obra de arte produzida pelos estúdios Disney. Realmente, este é filme que tem uma merecida nota 10. Tudo nele é perfeito e fiel às paisagens da África. Trilha Sonora jamais vista nos cinemas e uma categórica façanha dos produtores gráficos. - Cinema com Rapadura",
     "poster": "imagens/reileaopost.jpg",
+    "img_card": "imagens/reileao.jpg",
     "descricao": "Animação 2D de animais e fantasia",
     "screenshots": ["imagens/reileao1.jpg", "imagens/reileao2.jpg", "imagens/reileao3.jpg"],
     "url_video": "https://www.youtube.com/embed/WoXSvW-XVXc"
@@ -40,6 +42,7 @@
     "sinopse": "Chihiro é uma garota de 10 anos que acredita que todo o universo deve atender aos seus caprichos. Ao descobrir que vai se mudar, ela fica furiosa. Na viagem, Chihiro percebe que seu pai se perdeu no caminho para a nova cidade, indo parar defronte um túnel aparentemente sem fim, guardado por uma estranha estátua. Curiosos, os pais de Chihiro decidem entrar no túnel e Chihiro vai com eles. Chegam numa cidade sem nenhum habitante e os pais de Chihiro decidem comer a comida de uma das casas, enquanto a menina passeia. Ela encontra com Haku, garoto que lhe diz para ir embora o mais rápido possível e ao reencontrar seus pais, Chihiro fica surpresa ao ver que eles se transformaram em gigantescos porcos. É o início da jornada de Chihiro por um mundo fantasma, povoado por seres fantásticos, no qual humanos não são bem-vindos.",
     "review": "É provavelmente a animação convencional de melhor qualidade de todos os tempos, um tributo ao enorme talento dos animadores do Studio Ghibli (do próprio Miyazaki), que se superam a cada nova investida - Omelete",
     "poster": "imagens/chihiropost.jpg",
+    "img_card": "imagens/chihiro.jpg",
     "descricao": "Animação japonesa de aventura com muita fantasia",
     "screenshots": ["imagens/chihiro1.jpg", "imagens/chihiro2.jpg", "imagens/chihiro3.jpg"],
     "url_video": "https://www.youtube.com/embed/SgZI655GgHk"
@@ -55,6 +58,7 @@
     "sinopse": "Os irmão Setsuko e Seita vivem no Japão em meio a Segunda Guerra Mundial. Após a morte da mãe num bombardeio americano e a convocação do pai para a Guerra, eles vão morar com alguns parentes. Insatisfeitos, saem da cidade e acabam num abrigo isolado na floresta, onde lutam contra a fome e as doenças e se divertem com as luzes dos vaga-lumes.",
     "review": "Sem falar que é um filme lindo, a crítica social mexe com você e te faz acreditar que você vivenciou aquilo junto aos personagens. Uma lição que provavelmente você não vai esquecer jamais. - Pipocando Notícias",
     "poster": "imagens/vagalumespost.jpg",
+    "img_card": "imagens/vagalumes1.png",
     "descricao": "A história de dois irmãos sobrevivendo na guerra",
     "screenshots": ["imagens/vagalumes1.png", "imagens/vagalumes2.jpg", "imagens/vagalumes3.jpg"],
     "url_video": "https://www.youtube.com/embed/tC0Ug7sY0wE"
@@ -70,6 +74,7 @@
     "sinopse": "Miguel é um menino de 12 anos que quer muito ser um músico famoso, mas ele precisa lidar com sua família que desaprova seu sonho. Determinado a virar o jogo, ele acaba desencadeando uma série de eventos ligados a um mistério de 100 anos. A aventura, com inspiração no feriado mexicano do Dia dos Mortos, acaba gerando uma extraordinária reunião familiar.",
     "review": "Como era de se esperar de uma produção Pixar, os visuais em 'Viva - A Vida é uma Festa' saltam da tela, fazendo a cidade de Santa Cecília brilhar com vida e energia. Mas a real diversão, imaginação e criatividade cinematográfica é encontrada através das pontes que separam o mundo dos vivos e mortos. - Chicago Sun-Times",
     "poster": "imagens/vivapost.jpg",
+    "img_card": "imagens/viva.jpg",
     "descricao": "Aventura mexicana no mundo dos mortos",
     "screenshots": ["imagens/viva1.jpg", "imagens/viva2.jpg", "imagens/viva3.jpg"],
     "url_video": "https://www.youtube.com/embed/iLmZZV-Nkuk"
@@ -85,6 +90,7 @@
     "sinopse": "Riley é uma garota divertida de 11 anos de idade, que deve enfrentar mudanças importantes em sua vida quando seus pais decidem deixar a sua cidade natal, no estado de Minnesota, para viver em San Francisco. Dentro do cérebro de Riley, convivem várias emoções diferentes, como a Alegria, o Medo, a Raiva, o Nojinho e a Tristeza. A líder deles é Alegria, que se esforça bastante para fazer com que a vida de Riley seja sempre feliz. Entretanto, uma confusão na sala de controle faz com que ela e Tristeza sejam expelidas para fora do local. Agora, elas precisam percorrer as várias ilhas existentes nos pensamentos de Riley para que possam retornar à sala de controle - e, enquanto isto não acontece, a vida da garota muda radicalmente.",
     "review": "Esse é o longa mais complexo produzido pela Pixar. Isso porque, por baixo de toda fofura, cores e tecnologia, o cineasta Pete Docter e sua equipe conseguem traduzir toda essa intrincada estrutura em um longa que flui bem e de maneira divertida e fascinante - Cinema com Rapadura",
     "poster": "imagens/divertidapost.jpg",
+    "img_card": "imagens/divertida.jpg",
     "descricao": "Onde os sentimentos possuem vida própria e vão em uma aventura dentro da mente de uma criança",
     "screenshots": ["imagens/divertida1.jpg", "imagens/divertida2.jpg", "imagens/divertida3.jpg"],
     "url_video": "https://www.youtube.com/embed/LSpeM7G4zfY"
@@ -100,6 +106,7 @@
     "sinopse": "A caçula Anna (Kristen Bell/Gabi Porto) adora sua irmã Elsa (Idina Menzel/Taryn Szpilman), mas um acidente envolvendo os poderes especiais da mais velha, durante a infância, fez com que os pais as mantivessem afastadas. Após a morte deles, as duas cresceram isoladas no castelo da família, até o dia em que Elsa deveria assumir o reinado de Arendell. Com o reencontro das duas, um novo acidente acontece e ela decide partir para sempre e se isolar do mundo, deixando todos para trás e provocando o congelamento do reino. É quando Anna decide se aventurar pelas montanhas de gelo para encontrar a irmã e acabar com o frio.",
     "review": "Alegoricamente, 'Frozen' carece da pureza e do poder elementar de um clássico como 'A Bela e a Fera', mas pelo menos sua narrativa é bastante coerente e seu mundo etéreo de neve e gelo forma um dos ambientes visuais mais cativantes dentre os encontrados nas animações da Disney. - New York Times",
     "poster": "imagens/frozenpost.jpg",
+    "img_card": "imagens/frozen3.png",
     "descricao": "Uma aventura musical muito emocionante",
     "screenshots": ["imagens/frozen1.jpg", "imagens/frozen2.png", "imagens/frozen3.png"],
     "url_video": "https://www.youtube.com/embed/uKTz8y0pzL8"
@@ -115,6 +122,7 @@
     "sinopse": "Seres amarelos milenares, os minions têm uma missão: servir os maiores vilões. Em depressão desde a morte de seu antigo mestre, eles tentam encontrar um novo chefe. Três voluntários, Kevin, Stuart e Bob, vão até uma convenção de vilões nos Estados Unidos e lá se encantam com Scarlet Overkill (Sandra Bullock), que ambiciona ser a primeira mulher a dominar o mundo.",
     "review": "Uma animação tecnicamente muito boa, que utiliza elementos para fazer o público gastar (desnecessariamente) uns níqueis a mais nas salas 3D, mas que tem uma trama muito fina, que vai se desgastando ao longo de seus 91 minutos e por pouco não rasga. - Omelete",
     "poster": "imagens/minionspost.jpg",
+    "img_card": "imagens/minions1.png",
     "descricao": "A aventura dos famosos monstrinhos de Meu Malvado Favorito",
     "screenshots": ["imagens/minions1.png", "imagens/minions2.jpg", "imagens/minions3.jpg"],
     "url_video": "https://www.youtube.com/embed/ly-GueGW3_s"
@@ -130,6 +138,7 @@
     "sinopse": "Quando Helena Pêra é chamada para voltar a lutar contra o crime como a super-heroína Mulher-Elástica, cabe ao seu marido, Roberto, a tarefa de cuidar das crianças, especialmente o bebê Zezé. O que ele não esperava era que o caçula da família também tivesse superpoderes, que surgem sem qualquer controle.",
     "review": "Impulsionado por personagens centrais que permanecem muito atraentes e com um roteiro profundamente inteligente, 'Os Incríveis 2' certamente prova que vale a pena esperar, mesmo que acerte o alvo, mas não exatamente da mesma maneira que o primeiro. - The Hollywood Reporter",
     "poster": "imagens/incriveispost.jpg",
+    "img_card": "imagens/incriveis.png",
     "descricao": "Aventura de super herois com muita ação e humor",
     "screenshots": ["imagens/incriveis1.jpg", "imagens/incriveis2.png", "imagens/incriveis3.jpg"],
     "url_video": "https://www.youtube.com/embed/zOZR0TRnSU8"
@@ -145,6 +154,7 @@
     "sinopse": "Nos anos 1980, Balthazar Bratt fazia muito sucesso através de sua série de TV, onde interpretava um vilão chamado EvilBratt. Entretanto, o tempo passou, ele cresceu, a voz mudou e a fama se foi. Com a série cancelada, Balthazar tornou-se uma pessoa vingativa que, nas décadas seguintes, planejou seu retorno triunfal como vingança. Gru e Lucy são chamados para enfrentá-lo logo em sua reaparição, mas acabam sendo demitidos por não terem conseguido capturá-lo. Gru então descobre que possui um irmão gêmeo, Dru, e parte com a família para encontrá-lo no país em que vive.",
     "review": "''Meu Malvado Favorito 3' é um longa que agradará as crianças em cheio pelo seu característico e frequente – nos dias de hoje – ritmo frenético. Contudo, um roteiro bem escrito e um desenvolvimento de personagens eficiente [...] faria muito bem a nós adultos... '' - Café com Rapadura",
     "poster": "imagens/mauvpost.jpg",
+    "img_card": "imagens/mauv1.jpg",
     "descricao": "As novas aventuras de Gru e as três meninas",
     "screenshots": ["imagens/mauv1.jpg", "imagens/mauv2.jpg", "imagens/mauv3.jpg"],
     "url_video": "https://www.youtube.com/embed/9XEHAP9UGfY"

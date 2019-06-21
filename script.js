@@ -26,7 +26,7 @@ function geraCard(filme) {
   front.className = "flip-card-front"
   var img = document.createElement("img");
   img.className = "imgcard";
-  img.setAttribute("src", filme["screenshots"][0]);
+  img.setAttribute("src", filme["img_card"]);
 
   // Parte de trás do card
   var back = document.createElement("div");
