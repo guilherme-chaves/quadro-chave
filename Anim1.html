@@ -60,10 +60,44 @@
 	</nav>
 	<!--------------->
 	<main>
-		<div style="position: absolute; left: 0; background-color: #7cbbef; width: 79%; flex-direction: row; flex-wrap: wrap;">
-	<!---div mae--->
-<main style="flex-direction: column;">
+		<!---div mae--->
+		<div class="container-informacao">
+			<section class="row"> <!-- Div do título -->
+				<div class="col-md-6">
+					<h2>
+						<strong>Toy Story 3</strong>
+					</h2>
+					<p>Categoria 1, Categoria 2</p>
+				</div>
+				<div class="col-md-6 notas">
+					<h3>
+						<strong>9,5<sub>/10</sub></strong>
+					</h3>
+				</div>
+			</section>
+			<section class="row"> <!-- div das informações -->
+				<div class="col-md-4">
+					<img class="imgcarro" src="imagens/toy3post.jpg" alt="Toy Story"/>
+				</div>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-6">
+							<p><strong>Duração: </strong>90 min</p>
+							<p><strong>Ano: </strong>2016</p>
+							<p><strong>País: </strong>Estados Unidos</p>
+						</div>
+						<div class="col-md-6">
+							<p><strong>Direção: </strong>Naruto</p>
+							<p><strong>Cast: </strong>Pessoa 1, Pessoa 2, Pessoa 3</p>
+						</div>
+					</div>
+					<div>
+						<p><strong>Sinopse:</strong> Essa é a sinopse do filme</p>
+					</div>
+				</div>
+			</section>
 
+<<<<<<< HEAD
 	<div style="position: absolute; left: 0; background-color: #7cbbef; width: 79%; flex-direction: column;">
 
 		<!----- div das informações---->
@@ -84,6 +118,47 @@
 			<img src="imagens/toy33.jpg" style=" width:30%">
 		</div>
 	</div>
+
+=======
+			<hr> <!-- Linha divisória -->
+
+			<section class="row"><!----- div do trailer---->
+				<div class="col-md-12">
+					<h3><strong>Assista ao trailer:</strong></h3>
+					<iframe src="https://www.youtube.com/embed/JcpWXaA2qeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</section>
+
+			<hr>
+
+			<h3><strong>Screenshots:</strong></h3>
+			<section class="screenshots"><!----- div dos screeshots---->
+				<img src="imagens/toy31.jpg">
+				<img src="imagens/toy32.png">
+				<img src="imagens/toy33.jpg">
+			</section>
+>>>>>>> master
+
+			<hr>
+
+			<section class="panel-group review">
+				<div class="panel panel-default">
+					<a data-toggle="collapse" href="#review">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								Confira nossa review
+								<span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>
+							</h4>
+						</div>
+					</a>
+					<div id="review" class="panel-collapse collapse">
+						<div class="panel-body">
+							<p>Essa é a nossa review sobre o filme</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 <!--barra dos tops a direita--->
 	<div class="barra">
 		<div class="top">
@@ -132,7 +207,16 @@
 		</div>
 	</div>
 </main>
-
-
+	</main>
+	<script>
+		$(document).ready(function(){
+			$("#review").on("hide.bs.collapse", function(){
+				$(".panel-title").html('Confira nossa review <span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>');
+			});
+			$("#review").on("show.bs.collapse", function(){
+				$(".panel-title").html('Confira nossa review <span class="glyphicon glyphicon-chevron-up" style="float: right;"></span>');
+			});
+		});
+	</script>
 </body>
 </html>

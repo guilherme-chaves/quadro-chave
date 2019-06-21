@@ -92,8 +92,16 @@ function loadPesquisa(){
     }
   })
   .then(function() {
-    for (item in resultados) {
-      container.appendChild(geraCard(resultados[item]));
+    console.log(resultados.length);
+    if(resultados.length > 0){
+      for (item in resultados) {
+        container.appendChild(geraCard(resultados[item]));
+      }
+    } else {
+      var txt = document.createTextNode("Desculpa, mas não encontramos nenhum filme nessa categoria =/");
+      var p = document.createElement("p");
+      p.appendChild(txt);
+      container.appendChild(p);
     }
   });
 }
@@ -123,8 +131,15 @@ function loadFiltro() {
     }
   })
   .then(function(){
-    for(item in resultados){
-      container.appendChild(geraCard(resultados[item]));
+    if(resultados.length > 0){
+      for(item in resultados){
+        container.appendChild(geraCard(resultados[item]));
+      }
+    } else {
+      var txt = document.createTextNode("Desculpa, mas não encontramos nenhum filme nessa categoria =/");
+      var p = document.createElement("p");
+      p.appendChild(txt);
+      container.appendChild(p);
     }
   })
 }
