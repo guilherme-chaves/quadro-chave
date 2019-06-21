@@ -41,7 +41,7 @@
 
 .dropdown-content a {
   color: black;
-  padding: 4px 8px;
+  padding: 2px 8px;
   text-decoration: none;
   font-weight: normal;
   display: block;
@@ -213,6 +213,16 @@ li.dropdown {
     height: 95%;
   }
 
+  td a{
+    color: white;
+  }
+  th{
+    color: #ffb223;
+    text-align: center;
+  }
+  td{
+    font-size: 1vw;
+  }
   .top {
     width:90%;
     font-size: 20px;
