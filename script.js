@@ -220,12 +220,15 @@ function loadAnima(){
       }
     }
     if(animacao == {}){
+      // Se não encontrar a animação, retorna para o início
       location.href = "./index.html";
     }
   })
   .then(function(){
+    // Pega o array de gêneros e converte para string, separando-as por vírgula
     var generos = animacao["generos"].toString();
     generos = generos.replace(/,/g, ", ");
+    // Aplica os valores do filme aos campos na página
     document.getElementById("titulo-filme").innerHTML = animacao["nome"];
     document.getElementById("categorias-filme").innerHTML = generos;
     document.getElementById("nota-filme").innerHTML = animacao["nota"];
@@ -237,6 +240,7 @@ function loadAnima(){
     document.getElementById("sinopse-filme").innerHTML = animacao["sinopse"];
     document.getElementById("trailer-filme").src = animacao["url_video"];
 
+    // Procura a lista de screenshots e cria uma imagem para cada, aplicando atributos
     var screen_s = document.getElementsByClassName("screenshots")[0];
     screen_s.innerHTML = "";
     for(scr_shots in animacao["screenshots"]){
@@ -252,8 +256,9 @@ function loadAnima(){
   })
 }
 
+// Função do modal
 function showModal(event){
-  console.log(event.target);
+  // Pega a imagem selecionada e aplica no modal, o exibindo logo em seguida
   var img = event.target;
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("img01");
@@ -261,12 +266,10 @@ function showModal(event){
   modal.style.display = "block";
   modalImg.src = img.src;
   captionText.innerHTML = img.alt;
+
+  //Fecha o modal ao clicar no botão de fechar
   var span = document.getElementsByClassName("close")[0];
   span.onclick = function() {
     modal.style.display = "none";
   }
 }
-// Java Das screenshots
-
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption

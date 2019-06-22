@@ -13,7 +13,7 @@
 </head>
 <body onload="loadAnima()">
 	<!-----------menu---------->
-	<nav class="menu">
+	<nav class="menu" id="inicio">
 		<div style="flex-grow: 1">
 			<a href="index.html">
 				<img src="logo.png" style="width:60px; margin-left: 3vw" title="Quadro Chave">
@@ -29,7 +29,7 @@
 						<i class="fa fa-caret-down"></i>
 					</a>
 					<div class="dropdown-content">
-						<a href="#" onclick="filtrar('Ação/Aventura', 'generos', event)">Ação/Aventura</a>
+						<a href="#" onclick="filtrar('Aventura e Ação', 'generos', event)">Ação e Aventura</a>
 						<a href="#" onclick="filtrar('Romance', 'generos', event)">Romance</a>
 						<a href="#" onclick="filtrar('Anime', 'generos', event)">Anime</a>
 						<a href="#" onclick="filtrar('Drama', 'generos', event)">Drama</a>
@@ -209,21 +209,23 @@
 		</div>
 
 	</main>
+	<aside id="retornar">
+		<a href="#inicio" class="glyphicon glyphicon-arrow-up"></a>
+	</aside>
+	<footer id="footer">
+		<h4>Quadro Chave &copy; 2019</h4>
+	</footer>
 
-</main>
-<footer id="footer">
-	<h5>Quadro Chave &copy; 2019</h5>
-	<a href="#inicio">Voltar ao início</a>
-</footer>
-<script>
-	$(document).ready(function(){
-		$("#review").on("hide.bs.collapse", function(){
-			$(".panel-title").html('Confira a review <span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>');
+	<script>
+		/* Alterna a setinha na aba de review */
+		$(document).ready(function(){
+			$("#review").on("hide.bs.collapse", function(){
+				$(".panel-title").html('Confira a review <span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>');
+			});
+			$("#review").on("show.bs.collapse", function(){
+				$(".panel-title").html('Confira a review <span class="glyphicon glyphicon-chevron-up" style="float: right;"></span>');
+			});
 		});
-		$("#review").on("show.bs.collapse", function(){
-			$(".panel-title").html('Confira a review <span class="glyphicon glyphicon-chevron-up" style="float: right;"></span>');
-		});
-	});
-</script>
+	</script>
 </body>
 </html>
