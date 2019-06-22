@@ -11,6 +11,7 @@
     "review": "Toy Story 3 é épico desde a primeira cena. A sequência de abertura já é um aquecimento para o que virá a seguir: muita aventura, humor na medida certa e uma gostosa nostalgia - Omelete",
     "poster": "imagens/toy3post.jpg",
     "img_card": "imagens/toy3.jpg",
+    "alt_imagem": "Imagem promocional do filme Toy Story 3",
     "descricao": "Animação infantil de aventura ludica",
     "screenshots": ["imagens/toy31.jpg", "imagens/toy32.png", "imagens/toy33.jpg"],
     "url_video": "https://www.youtube.com/embed/JcpWXaA2qeg"
@@ -27,6 +28,7 @@
     "review": "A maior obra de arte produzida pelos estúdios Disney. Realmente, este é filme que tem uma merecida nota 10. Tudo nele é perfeito e fiel às paisagens da África. Trilha Sonora jamais vista nos cinemas e uma categórica façanha dos produtores gráficos. - Cinema com Rapadura",
     "poster": "imagens/reileaopost.jpg",
     "img_card": "imagens/reileao.jpg",
+    "alt_imagem": "Imagem promocional do filme Rei Leão",
     "descricao": "Animação 2D de animais e fantasia",
     "screenshots": ["imagens/reileao1.jpg", "imagens/reileao2.jpg", "imagens/reileao3.jpg"],
     "url_video": "https://www.youtube.com/embed/WoXSvW-XVXc"
@@ -43,6 +45,7 @@
     "review": "É provavelmente a animação convencional de melhor qualidade de todos os tempos, um tributo ao enorme talento dos animadores do Studio Ghibli (do próprio Miyazaki), que se superam a cada nova investida - Omelete",
     "poster": "imagens/chihiropost.jpg",
     "img_card": "imagens/chihiro.jpg",
+    "alt_imagem": "Imagem promocional do filme A Viagem de Chihiro",
     "descricao": "Animação japonesa de aventura com muita fantasia",
     "screenshots": ["imagens/chihiro1.jpg", "imagens/chihiro2.jpg", "imagens/chihiro3.jpg"],
     "url_video": "https://www.youtube.com/embed/SgZI655GgHk"
@@ -59,6 +62,7 @@
     "review": "Sem falar que é um filme lindo, a crítica social mexe com você e te faz acreditar que você vivenciou aquilo junto aos personagens. Uma lição que provavelmente você não vai esquecer jamais. - Pipocando Notícias",
     "poster": "imagens/vagalumespost.jpg",
     "img_card": "imagens/vagalumes1.png",
+    "alt_imagem": "Imagem promocional do filme Túmulo dos Vagalumes",
     "descricao": "A história de dois irmãos sobrevivendo na guerra",
     "screenshots": ["imagens/vagalumes1.png", "imagens/vagalumes2.jpg", "imagens/vagalumes3.jpg"],
     "url_video": "https://www.youtube.com/embed/tC0Ug7sY0wE"
@@ -75,6 +79,7 @@
     "review": "Como era de se esperar de uma produção Pixar, os visuais em 'Viva - A Vida é uma Festa' saltam da tela, fazendo a cidade de Santa Cecília brilhar com vida e energia. Mas a real diversão, imaginação e criatividade cinematográfica é encontrada através das pontes que separam o mundo dos vivos e mortos. - Chicago Sun-Times",
     "poster": "imagens/vivapost.jpg",
     "img_card": "imagens/viva.jpg",
+    "alt_imagem": "Imagem promocional do filme Viva: A vida é uma festa",
     "descricao": "Aventura mexicana no mundo dos mortos",
     "screenshots": ["imagens/viva1.jpg", "imagens/viva2.jpg", "imagens/viva3.jpg"],
     "url_video": "https://www.youtube.com/embed/iLmZZV-Nkuk"
@@ -91,6 +96,7 @@
     "review": "Esse é o longa mais complexo produzido pela Pixar. Isso porque, por baixo de toda fofura, cores e tecnologia, o cineasta Pete Docter e sua equipe conseguem traduzir toda essa intrincada estrutura em um longa que flui bem e de maneira divertida e fascinante - Cinema com Rapadura",
     "poster": "imagens/divertidapost.jpg",
     "img_card": "imagens/divertida.jpg",
+    "alt_imagem": "Imagem promocional do filme Divertida Mente",
     "descricao": "Onde os sentimentos possuem vida própria e vão em uma aventura dentro da mente de uma criança",
     "screenshots": ["imagens/divertida1.jpg", "imagens/divertida2.jpg", "imagens/divertida3.jpg"],
     "url_video": "https://www.youtube.com/embed/LSpeM7G4zfY"
@@ -107,6 +113,7 @@
     "review": "Alegoricamente, 'Frozen' carece da pureza e do poder elementar de um clássico como 'A Bela e a Fera', mas pelo menos sua narrativa é bastante coerente e seu mundo etéreo de neve e gelo forma um dos ambientes visuais mais cativantes dentre os encontrados nas animações da Disney. - New York Times",
     "poster": "imagens/frozenpost.jpg",
     "img_card": "imagens/frozen3.png",
+    "alt_imagem": "Imagem promocional do filme Frozen",
     "descricao": "Uma aventura musical muito emocionante",
     "screenshots": ["imagens/frozen1.jpg", "imagens/frozen2.png", "imagens/frozen3.png"],
     "url_video": "https://www.youtube.com/embed/uKTz8y0pzL8"
@@ -123,6 +130,7 @@
     "review": "Uma animação tecnicamente muito boa, que utiliza elementos para fazer o público gastar (desnecessariamente) uns níqueis a mais nas salas 3D, mas que tem uma trama muito fina, que vai se desgastando ao longo de seus 91 minutos e por pouco não rasga. - Omelete",
     "poster": "imagens/minionspost.jpg",
     "img_card": "imagens/minions1.png",
+    "alt_imagem": "Imagem promocional do filme Minions",
     "descricao": "A aventura dos famosos monstrinhos de Meu Malvado Favorito",
     "screenshots": ["imagens/minions1.png", "imagens/minions2.jpg", "imagens/minions3.jpg"],
     "url_video": "https://www.youtube.com/embed/ly-GueGW3_s"
@@ -139,6 +147,7 @@
     "review": "Impulsionado por personagens centrais que permanecem muito atraentes e com um roteiro profundamente inteligente, 'Os Incríveis 2' certamente prova que vale a pena esperar, mesmo que acerte o alvo, mas não exatamente da mesma maneira que o primeiro. - The Hollywood Reporter",
     "poster": "imagens/incriveispost.jpg",
     "img_card": "imagens/incriveis.png",
+    "alt_imagem": "Imagem promocional do filme Os Incríveis 2",
     "descricao": "Aventura de super herois com muita ação e humor",
     "screenshots": ["imagens/incriveis1.jpg", "imagens/incriveis2.png", "imagens/incriveis3.jpg"],
     "url_video": "https://www.youtube.com/embed/zOZR0TRnSU8"
@@ -155,6 +164,7 @@
     "review": "''Meu Malvado Favorito 3' é um longa que agradará as crianças em cheio pelo seu característico e frequente – nos dias de hoje – ritmo frenético. Contudo, um roteiro bem escrito e um desenvolvimento de personagens eficiente [...] faria muito bem a nós adultos... '' - Café com Rapadura",
     "poster": "imagens/mauvpost.jpg",
     "img_card": "imagens/mauv1.jpg",
+    "alt_imagem": "Imagem promocional do filme Meu Malvado Favorito 3",
     "descricao": "As novas aventuras de Gru e as três meninas",
     "screenshots": ["imagens/mauv1.jpg", "imagens/mauv2.jpg", "imagens/mauv3.jpg"],
     "url_video": "https://www.youtube.com/embed/9XEHAP9UGfY"
