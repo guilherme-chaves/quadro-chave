@@ -29,6 +29,7 @@ function geraCard(filme) {
   var img = document.createElement("img");
   img.className = "imgcard";
   img.setAttribute("src", filme["img_card"]);
+  img.setAttribute("alt", filme["alt_imagem"]);
 
   // Parte de trás do card
   var back = document.createElement("div");
