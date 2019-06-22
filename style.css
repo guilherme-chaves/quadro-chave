@@ -90,9 +90,9 @@ main {
 .top > * {
   margin: 0;
 }
+
 .imgcarro{
   width:100%;
-}
 }
 
 /*---------------------cartões flips*/
@@ -160,8 +160,7 @@ main {
   padding: 4px;
 }
 
-
-
+/*----------Textos dos Tops*/
 .barra {
   position: absolute;
   right: 0;
@@ -178,7 +177,7 @@ main {
 .table {
   background: white;
 }
-/*----------Textos dos Tops*/
+
 td a {
   color: #292b3f;
   text-decoration: none;
@@ -307,8 +306,6 @@ iframe {
     width: 100%;
   }
 }
-
-
 
 /*---------Review---*/
 .panel-body{
