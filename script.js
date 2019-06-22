@@ -205,7 +205,6 @@ function loadAnima(){
     // Se o valor não estiver carregado, retorna para o index
     location.href = "./index.html";
   }
-
   var nome = sessionStorage.animacao;
   var filmes = {};
   var animacao = {};
@@ -242,6 +241,8 @@ function loadAnima(){
     for(scr_shots in animacao["screenshots"]){
       var img = document.createElement("img");
       img.setAttribute("src", animacao["screenshots"][scr_shots]);
+      img.setAttribute("alt", "Screenshot de uma cena do filme");
+      img.setAttribute("onclick", "showModal(event)");
       img.className = "img-responsive";
       screen_s.appendChild(img);
     }
@@ -250,22 +251,21 @@ function loadAnima(){
   })
 }
 
+function showModal(event){
+  console.log(event.target);
+  var img = event.target;
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  modal.style.display = "block";
+  modalImg.src = img.src;
+  captionText.innerHTML = img.alt;
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+}
 // Java Das screenshots
-var modal = document.getElementById("myModal");
+
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-
-span.onclick = function() {
-  modal.style.display = "none";
-} 
